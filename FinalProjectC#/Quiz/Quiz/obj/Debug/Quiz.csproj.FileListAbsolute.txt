@@ -1,0 +1,12 @@
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\Quiz.exe.config
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\Quiz.exe
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\Quiz.pdb
+C:\Users\1\source\repos\Quiz\Quiz\obj\Debug\Quiz.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\Quiz\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Quiz\Quiz\obj\Debug\Quiz.exe
+C:\Users\1\source\repos\Quiz\Quiz\obj\Debug\Quiz.pdb
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\QuizBll.dll
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\QuizBll.pdb
+C:\Users\1\source\repos\Quiz\Quiz\obj\Debug\Quiz.csproj.Up2Date
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\User.dll
+C:\Users\1\source\repos\Quiz\Quiz\bin\Debug\User.pdb

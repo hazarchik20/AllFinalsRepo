@@ -1,0 +1,6 @@
+C:\Users\1\source\repos\Quiz\QuizBll\obj\Debug\QuizBll.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\Quiz\QuizBll\obj\Debug\QuizBll.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Quiz\QuizBll\bin\Debug\QuizBll.dll
+C:\Users\1\source\repos\Quiz\QuizBll\bin\Debug\QuizBll.pdb
+C:\Users\1\source\repos\Quiz\QuizBll\obj\Debug\QuizBll.dll
+C:\Users\1\source\repos\Quiz\QuizBll\obj\Debug\QuizBll.pdb

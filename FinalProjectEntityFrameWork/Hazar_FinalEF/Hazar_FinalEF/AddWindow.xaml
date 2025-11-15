@@ -1,0 +1,130 @@
+﻿<Window x:Class="Hazar_FinalEF.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hazar_FinalEF"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="500" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Firebrick"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Cursor" Value="Hand"></Setter>
+            <Setter Property="BorderBrush" Value="DarkRed"></Setter>
+            <Setter Property="BorderThickness" Value="3"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="Margin" Value="12"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderBrush" Value="LightGray"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="Margin" Value="12"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderBrush" Value="LightGray"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="19"></Setter>
+            <Setter Property="TextAlignment" Value="Right"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="DarkSlateGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.7*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Name="titleTb" HorizontalAlignment="Center" FontSize="35"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0">Name Record:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0">Name Group:</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2">Birthday:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2">Count Song:</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0">Name Publisher:</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0">Genre Music:</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="2">Cost:</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="2">Cost for sale:</TextBlock>
+        <TextBox x:Name="NameRecordTB" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox x:Name="NameGroupTB" Grid.Row="2" Grid.Column="1"></TextBox>
+        <DatePicker x:Name="birthdayTb" Padding="10" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" Width="240" />
+        <TextBox x:Name="CountSongTB" Grid.Row="2" Grid.Column="3"></TextBox>
+        <TextBox x:Name="NamePublisherTB" Grid.Row="3" Grid.Column="1"></TextBox>
+        <StackPanel Grid.Row="4" Grid.Column="1">
+            <ComboBox x:Name="genre_MusicRecordCB" Margin="10" Height="50" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Classical_music</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Country</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Electronic_dance_music</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Hip_hop</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Jazz</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Rock</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">K_pop</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Latin_music</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItem_Selected" IsSelected="True">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Pop</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <TextBox x:Name="CostTB" Grid.Row="3" Grid.Column="3"></TextBox>
+        <TextBox x:Name="Cost_for_saleTB" Grid.Row="4" Grid.Column="3"></TextBox>
+        <StackPanel Margin="10,10,0,0" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2">
+            <WrapPanel>
+                <TextBlock>Count real:</TextBlock>
+                <TextBox x:Name="RealCountTB" Width="190"></TextBox>
+            </WrapPanel>
+        </StackPanel>
+        <Button Grid.Column="3" Grid.Row="6" Margin="10" Name="editBt" Click="ADDBt_Click"></Button>
+    </Grid>
+</Window>

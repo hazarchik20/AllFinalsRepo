@@ -1,0 +1,29 @@
+C:\Users\1\source\repos\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.deps.json
+C:\Users\1\source\repos\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.runtimeconfig.json
+C:\Users\1\source\repos\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.dll
+C:\Users\1\source\repos\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.pdb
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.AssemblyInfoInputs.cache
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.AssemblyInfo.cs
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.dll
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\refint\DLL.dll
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.pdb
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.genruntimeconfig.cache
+C:\Users\1\source\repos\FinalApi_HZR\DLL\obj\Debug\net8.0\ref\DLL.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.deps.json
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.runtimeconfig.json
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\bin\Debug\net8.0\DLL.pdb
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.csproj.AssemblyReference.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.AssemblyInfoInputs.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.AssemblyInfo.cs
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.csproj.CoreCompileInputs.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.sourcelink.json
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\refint\DLL.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.pdb
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\DLL.genruntimeconfig.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalApi_HZR\DLL\obj\Debug\net8.0\ref\DLL.dll

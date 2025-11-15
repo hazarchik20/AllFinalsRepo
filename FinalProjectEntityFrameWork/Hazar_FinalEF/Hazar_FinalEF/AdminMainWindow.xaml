@@ -1,0 +1,233 @@
+﻿<Window x:Class="Hazar_FinalEF.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hazar_FinalEF"
+        mc:Ignorable="d"
+        Title="AdminMainWindow" Height="600" Width="950">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Firebrick"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Cursor" Value="Hand"></Setter>
+            <Setter Property="BorderBrush" Value="DarkRed"></Setter>
+            <Setter Property="BorderThickness" Value="3"></Setter>
+            <Setter Property="Padding" Value="1"></Setter>
+            <Setter Property="Margin" Value="10,5"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderBrush" Value="LightGray"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="19"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="VerticalAlignment" Value="center"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="DarkSlateGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            <ColumnDefinition Width="1.1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"></RowDefinition>
+            <RowDefinition Height="0.20*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Background="DarkSeaGreen" Margin="5" Grid.Row="0" Grid.Column="2">
+                <Button Margin="5" Name="showMusicRercordBT" Click="showMusicRercordBT_Click">Show all records</Button>
+            </StackPanel>
+            <StackPanel  Background="DarkSeaGreen" Margin="5" Grid.Row="0" Grid.Column="3">
+                <Button  Margin="10" Name="addMusicRercordBT" Click="addMusicRercordBT_Click">Add</Button>
+            </StackPanel>
+            <StackPanel  Background="DarkSeaGreen" Margin="5" Grid.Row="1"  Grid.Column="2" >
+                <Button Margin="10" Name="updateMusicRercordBT" Click="updateMusicRercordBT_Click">Update</Button>
+            </StackPanel>
+            <StackPanel  Background="DarkSeaGreen" Margin="5" Grid.Row="1" Grid.Column="3" >
+                <Button Margin="10" Name="deleteMusicRercordBT" Click="deleteMusicRercordBT_Click">Delete</Button>
+            </StackPanel>
+           
+        </Grid>
+        <DataGrid Grid.Row="0" Grid.Column="1" Margin="5" Name="ShowAllGrid" AutoGenerateColumns="False" FontSize="16" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly ="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=NameRecord}" Header="NameRecord"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=NameGroup}" Header="NameGroup"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=NamePublisher}" Header="NamePublisher"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Birthday, StringFormat=d}" Header="Birthday"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=CountSong}" Header="CountSong"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Cost_for_sale}" Header="Costforsale"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Cost}" Header="Cost"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=genre_MusicRecord}" Header="Genre"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=RealmusicRecord}" Header="In stock"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="0" Grid.Column="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.85*"></RowDefinition>
+                <RowDefinition Height="1.4*"></RowDefinition>
+                <RowDefinition Height="0.7*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Background="DarkSeaGreen" Margin="5" Name="JustStack" Grid.Row="0">
+                <Button Margin="10,5" Name="SellMusicRercordBT" Click="SellMusicRercordBT_Click">Sell Music Rercord</Button>
+                <Button Margin="10,5" Name="PostPoneBT" Click="PostPoneBT_Click">PostPone Music record</Button>
+                <WrapPanel>
+                    <Button Margin="11,5" Padding="5" Name="WriteOffBT" Click="WriteOffBT_Click">WriteOff </Button>
+                    <TextBox Name="WriteOffTB" Margin="2,5" Width="80"></TextBox>
+                </WrapPanel>
+            </StackPanel>
+            <StackPanel Background="DarkSeaGreen" Margin="5" Name="SearchingStack" Grid.Row="1">
+                <Button Margin="10,5,10,0" Name="SearchingMusicRercordBT" VerticalAlignment="Bottom" Click="SearchingMusicRercordBT_Click">Searching</Button>
+                <Expander Header="Searching By" >
+                    <GroupBox Width="100" Height="50">
+                        <StackPanel Background="Gainsboro" Name="SearchingChoiseStack" >
+                            <RadioButton Checked="RadioButtonSearching_Checked" Content="Group Name"></RadioButton>
+                            <RadioButton Checked="RadioButtonSearching_Checked" Content="Name record"></RadioButton>
+                            <RadioButton Checked="RadioButtonSearching_Checked" Content="Genre"></RadioButton>
+                        </StackPanel>
+                    </GroupBox>
+                </Expander>
+                <ComboBox x:Name="Showgenre_MusicRecordCB" Margin="10,5" Height="50" SelectionChanged="ComboBoxSearching_SelectionChanged">
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Classical_music</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Country</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Electronic_dance_music</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Hip_hop</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Jazz</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Rock</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected" >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">K_pop</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected" >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="16">Latin_music</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem Background="LightGray" Selected="ComboBoxItemSearching_Selected">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Pop</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+                <TextBox Margin="5,3" Name="SearchingTB" Background="White" TextAlignment="Left"></TextBox>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" VerticalAlignment="Top" Background="DarkSeaGreen" Margin="5,360,5,0" Height="195">
+            <Button Margin="10,5,10,0" Name="MostPopularBT" Click="MostPopularBT_Click">Most Popular</Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="5" Grid.Column="0" Width="90" Height="50" Background="Gainsboro" Name="MostPopularStack" >
+                    <RadioButton Checked="RadioButtonPopular_Checked" Content="ALL Record"></RadioButton>
+                    <RadioButton Checked="RadioButtonPopular_Checked" Content="AVTOR"></RadioButton>
+                    <RadioButton Checked="RadioButtonPopular_Checked" Content="GENRE"></RadioButton>
+                </StackPanel>
+                <StackPanel Margin="5" Grid.Column="1" Width="90" Height="50" Background="Gainsboro" Name="fff" >
+                    <RadioButton Checked="RadioButtonPopularTime_Checked" Content="Week"></RadioButton>
+                    <RadioButton Checked="RadioButtonPopularTime_Checked" Content="Month"></RadioButton>
+                    <RadioButton Checked="RadioButtonPopularTime_Checked" Content="Year"></RadioButton>
+                </StackPanel>
+
+            </Grid>
+
+            <ComboBox x:Name="MostPopulargenre_MusicRecordCB" Margin="10,5" Height="50" SelectionChanged="ComboBoxPopular_SelectionChanged">
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Classical_music</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Country</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Electronic_dance_music</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Hip_hop</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Jazz</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Rock</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">K_pop</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16">Latin_music</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="LightGray" Selected="ComboBoxItemPopular_Selected">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Pop</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBox Margin="5,3" Name="MostPopularTB" Background="White" TextAlignment="Left"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+C:\Users\1\source\repos\Quiz\User\bin\Debug\User.dll
+C:\Users\1\source\repos\Quiz\User\bin\Debug\User.pdb
+C:\Users\1\source\repos\Quiz\User\obj\Debug\UserBll.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\Quiz\User\obj\Debug\UserBll.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Quiz\User\obj\Debug\User.dll
+C:\Users\1\source\repos\Quiz\User\obj\Debug\User.pdb
+C:\Users\1\source\repos\Quiz\User\bin\Debug\QuizBll.dll
+C:\Users\1\source\repos\Quiz\User\bin\Debug\QuizBll.pdb
+C:\Users\1\source\repos\Quiz\User\obj\Debug\UserBll.csproj.Up2Date

@@ -1,0 +1,420 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\configuration\\confihurationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\configuration\\confihurationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\services\\musicrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\services\\musicrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\adminmainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\adminmainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\interfaces\\iservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\repository\\musicrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\repository\\musicrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\musicrecordcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\musicrecordcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\adminmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\adminmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\signinwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\signinwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\signinwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\signinwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\models\\vidkladmusicrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\models\\vidkladmusicrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\models\\soldmusicrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\models\\soldmusicrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\sellwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\sellwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\modelsinfo\\vidkladmusicrecordinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\modelsinfo\\vidkladmusicrecordinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\modelsinfo\\realmusicrecordinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\modelsinfo\\realmusicrecordinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\modelsinfo\\peopleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\modelsinfo\\peopleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\modelsinfo\\musicrecordinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\modelsinfo\\musicrecordinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\dll\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3D5285-AAAE-4E10-A42B-C19D163BF2C1}|DLL\\DLL.csproj|solutionrelative:dll\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\hazar_finalef\\hazar_finalef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{27262CE9-D74B-4A05-B074-D5FEA9EBF754}|Hazar_FinalEF\\Hazar_FinalEF.csproj|solutionrelative:hazar_finalef\\hazar_finalef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\bll.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|c:\\users\\1\\source\\repos\\hazar_finalef\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{07C05359-462B-4A12-85D9-D4D3B538D4FD}|BLL\\BLL.csproj|solutionrelative:bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SOLDmusicRecord.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Models\\SOLDmusicRecord.cs",
+              "RelativeDocumentMoniker": "BLL\\Models\\SOLDmusicRecord.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Models\\SOLDmusicRecord.cs",
+              "RelativeToolTip": "BLL\\Models\\SOLDmusicRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:37:31.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IServices.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Interfaces\\IServices.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IServices.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Interfaces\\IServices.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:37:24.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LOGINwindow.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\LOGINwindow.xaml",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\LOGINwindow.xaml",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\LOGINwindow.xaml",
+              "RelativeToolTip": "Hazar_FinalEF\\LOGINwindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-13T17:27:33.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminMainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AdminMainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\AdminMainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AdminMainWindow.xaml.cs",
+              "RelativeToolTip": "Hazar_FinalEF\\AdminMainWindow.xaml.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAiwCIBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T17:26:59.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminMainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AdminMainWindow.xaml",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\AdminMainWindow.xaml",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AdminMainWindow.xaml",
+              "RelativeToolTip": "Hazar_FinalEF\\AdminMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-13T17:27:00.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AddWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\AddWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AddWindow.xaml.cs",
+              "RelativeToolTip": "Hazar_FinalEF\\AddWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAApwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T14:40:39.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AddWindow.xaml",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\AddWindow.xaml",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AddWindow.xaml",
+              "RelativeToolTip": "Hazar_FinalEF\\AddWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-13T17:27:35.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MusicRecordService.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Services\\MusicRecordService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\MusicRecordService.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Services\\MusicRecordService.cs",
+              "RelativeToolTip": "BLL\\Services\\MusicRecordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:37:33.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LOGINwindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\LOGINwindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\LOGINwindow.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\LOGINwindow.xaml.cs",
+              "RelativeToolTip": "Hazar_FinalEF\\LOGINwindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:20:12.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SIGNINwindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\SIGNINwindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\SIGNINwindow.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\SIGNINwindow.xaml.cs",
+              "RelativeToolTip": "Hazar_FinalEF\\SIGNINwindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:20:17.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SIGNINwindow.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\SIGNINwindow.xaml",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\SIGNINwindow.xaml",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\SIGNINwindow.xaml",
+              "RelativeToolTip": "Hazar_FinalEF\\SIGNINwindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-09T15:20:21.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VIDKLADmusicRecord.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Models\\VIDKLADmusicRecord.cs",
+              "RelativeDocumentMoniker": "BLL\\Models\\VIDKLADmusicRecord.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Models\\VIDKLADmusicRecord.cs",
+              "RelativeToolTip": "BLL\\Models\\VIDKLADmusicRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:37:32.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfihurationBLL.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Configuration\\ConfihurationBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Configuration\\ConfihurationBLL.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\Configuration\\ConfihurationBLL.cs",
+              "RelativeToolTip": "BLL\\Configuration\\ConfihurationBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:34.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\AssemblyInfo.cs",
+              "RelativeToolTip": "Hazar_FinalEF\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:32.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SellWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\SellWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\SellWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\SellWindow.xaml.cs",
+              "RelativeToolTip": "Hazar_FinalEF\\SellWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:29.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VIDKLADmusicRecordInfo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\VIDKLADmusicRecordInfo.cs",
+              "RelativeDocumentMoniker": "DLL\\ModelsInfo\\VIDKLADmusicRecordInfo.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\VIDKLADmusicRecordInfo.cs",
+              "RelativeToolTip": "DLL\\ModelsInfo\\VIDKLADmusicRecordInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:12.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "REALmusicRecordInfo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\REALmusicRecordInfo.cs",
+              "RelativeDocumentMoniker": "DLL\\ModelsInfo\\REALmusicRecordInfo.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\REALmusicRecordInfo.cs",
+              "RelativeToolTip": "DLL\\ModelsInfo\\REALmusicRecordInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:12.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PeopleInfo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\PeopleInfo.cs",
+              "RelativeDocumentMoniker": "DLL\\ModelsInfo\\PeopleInfo.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\PeopleInfo.cs",
+              "RelativeToolTip": "DLL\\ModelsInfo\\PeopleInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:10.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MusicRecordInfo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\MusicRecordInfo.cs",
+              "RelativeDocumentMoniker": "DLL\\ModelsInfo\\MusicRecordInfo.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\ModelsInfo\\MusicRecordInfo.cs",
+              "RelativeToolTip": "DLL\\ModelsInfo\\MusicRecordInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:09.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "DLL\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:35:00.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MusicRecordRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\Repository\\MusicRecordRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Repository\\MusicRecordRepository.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\Repository\\MusicRecordRepository.cs",
+              "RelativeToolTip": "DLL\\Repository\\MusicRecordRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:34:47.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MusicRecordContext.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\MusicRecordContext.cs",
+              "RelativeDocumentMoniker": "DLL\\MusicRecordContext.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\DLL\\MusicRecordContext.cs",
+              "RelativeToolTip": "DLL\\MusicRecordContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T12:34:38.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Hazar_FinalEF.csproj",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\Hazar_FinalEF.csproj",
+              "RelativeDocumentMoniker": "Hazar_FinalEF\\Hazar_FinalEF.csproj",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\Hazar_FinalEF\\Hazar_FinalEF.csproj",
+              "RelativeToolTip": "Hazar_FinalEF\\Hazar_FinalEF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-10T05:49:14.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BLL",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\BLL.csproj",
+              "RelativeDocumentMoniker": "BLL\\BLL.csproj",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\BLL.csproj",
+              "RelativeToolTip": "BLL\\BLL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-10T05:48:56.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BLL.csproj",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\BLL.csproj",
+              "RelativeDocumentMoniker": "BLL\\BLL.csproj",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Hazar_FinalEF\\BLL\\BLL.csproj",
+              "RelativeToolTip": "BLL\\BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-10T05:48:54.163Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

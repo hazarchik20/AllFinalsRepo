@@ -1,0 +1,69 @@
+﻿<Window x:Class="Hazar_FinalEF.LOGINwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hazar_FinalEF"
+        mc:Ignorable="d"
+        Title="LOGINwindow" Height="450" Width="800">
+       <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Firebrick"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="Cursor" Value="Hand"></Setter>
+            <Setter Property="BorderBrush" Value="DarkRed"></Setter>
+            <Setter Property="BorderThickness" Value="3"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="Margin" Value="12,20"></Setter>
+                <Setter Property="Padding" Value="2"></Setter>
+                <Setter Property="TextAlignment" Value="Center"></Setter>
+                <Setter Property="BorderThickness" Value="2"></Setter>
+                <Setter Property="BorderBrush" Value="LightGray"></Setter>
+            </Style>
+            <Style TargetType="DatePicker">
+                <Setter Property="FontSize" Value="18"></Setter>
+                <Setter Property="Margin" Value="10"></Setter>
+                <Setter Property="Padding" Value="15"></Setter>
+                <Setter Property="BorderThickness" Value="2"></Setter>
+                <Setter Property="BorderBrush" Value="LightGray"></Setter>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="19"></Setter>
+                <Setter Property="TextAlignment" Value="Right"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            </Style>
+    </Window.Resources>
+    <Grid Background="DarkSlateGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Width="300" Margin="0,10" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0">Name:</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0">Password:</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0">Birthday:</TextBlock>
+            <TextBox x:Name="nameTb" Grid.Row="0" Grid.Column="1"></TextBox>
+            <TextBox x:Name="lastNameTb" Grid.Row="1" Grid.Column="1"></TextBox>
+            <DatePicker x:Name="birthdayTb" Grid.Row="2" Grid.Column="1"></DatePicker>
+        </Grid>
+
+        <Button Grid.Row="2" Width="200" Height="60"  FontSize="22" Name="Log_In_BT" Click="Log_In_Click">Log In</Button>
+        <Button HorizontalAlignment="Right" Margin="5" Grid.Row="0" Width="50" Height="50" Name="EXIT_Log_In_BT" Click="EXIT_Log_In_Click">EXT</Button>
+
+    </Grid>
+</Window>
