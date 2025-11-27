@@ -1,0 +1,124 @@
+#cardContainer {
+    max-width: 1100px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 20px 20px; 
+    gap: 20px 0; 
+}
+
+.car-card {
+    width: 220px; 
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.thumbnail {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.discountPercentage {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff3b3b;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.category {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.description {
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+    height: 60px;
+    overflow: hidden;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #27ae60;
+}
+
+.brand, .model {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-btn, .trash-btn, .update-btn {
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute; 
+    bottom: 10px;
+}
+
+.cart-btn {
+    background: #3b82f6;
+    right: 10px; 
+}
+
+.trash-btn {
+    background: #fd0404;
+    left: 8px; 
+}
+
+.update-btn {
+    background: #19b813;
+    left: 45px; 
+}
+
+.trash-btn:hover {
+    background: #dd1515;
+    border:#8f0000 solid 2px;
+}
+.update-btn:hover {
+    background: #04fd04;
+    border:#19b813 solid 2px;
+}
+.cart-btn:hover {
+    background: #1d4ed8;
+    border:#243996 solid 2px;
+}

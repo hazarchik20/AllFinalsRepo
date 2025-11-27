@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7219B6BB-1B9B-4512-8779-ED9630097171}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\\u0441#apiserver\\dll\\repository\\carapirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7219B6BB-1B9B-4512-8779-ED9630097171}|DLL\\DLL.csproj|solutionrelative:dll\\repository\\carapirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E6FFC9-E0B3-4ACC-AC81-B41BA62EDABB}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\\u0441#apiserver\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E6FFC9-E0B3-4ACC-AC81-B41BA62EDABB}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7219B6BB-1B9B-4512-8779-ED9630097171}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\\u0441#apiserver\\dll\\carapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7219B6BB-1B9B-4512-8779-ED9630097171}|DLL\\DLL.csproj|solutionrelative:dll\\carapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C812C9-4A50-4C22-9596-FA7200F4BD6F}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\\u0441#apiserver\\bll\\services\\carservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93C812C9-4A50-4C22-9596-FA7200F4BD6F}|BLL\\BLL.csproj|solutionrelative:bll\\services\\carservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C812C9-4A50-4C22-9596-FA7200F4BD6F}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\\u0441#apiserver\\bll\\models\\\u0441ar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93C812C9-4A50-4C22-9596-FA7200F4BD6F}|BLL\\BLL.csproj|solutionrelative:bll\\models\\\u0441ar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7219B6BB-1B9B-4512-8779-ED9630097171}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\\u0441#apiserver\\dll\\interfaces\\irepositoryinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7219B6BB-1B9B-4512-8779-ED9630097171}|DLL\\DLL.csproj|solutionrelative:dll\\interfaces\\irepositoryinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarServices.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\BLL\\Services\\CarServices.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\CarServices.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\BLL\\Services\\CarServices.cs",
+              "RelativeToolTip": "BLL\\Services\\CarServices.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:46:59.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarApiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\DLL\\Repository\\CarApiRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Repository\\CarApiRepository.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\DLL\\Repository\\CarApiRepository.cs",
+              "RelativeToolTip": "DLL\\Repository\\CarApiRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:06:22.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarApiContext.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\DLL\\CarApiContext.cs",
+              "RelativeDocumentMoniker": "DLL\\CarApiContext.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\DLL\\CarApiContext.cs",
+              "RelativeToolTip": "DLL\\CarApiContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwEwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T13:53:02.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepositoryInterfaces.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\DLL\\Interfaces\\IRepositoryInterfaces.cs",
+              "RelativeDocumentMoniker": "DLL\\Interfaces\\IRepositoryInterfaces.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\DLL\\Interfaces\\IRepositoryInterfaces.cs",
+              "RelativeToolTip": "DLL\\Interfaces\\IRepositoryInterfaces.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:29:46.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "\u0421ar.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\BLL\\Models\\\u0421ar.cs",
+              "RelativeDocumentMoniker": "BLL\\Models\\\u0421ar.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\BLL\\Models\\\u0421ar.cs",
+              "RelativeToolTip": "BLL\\Models\\\u0421ar.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:04:59.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\\u0421#ApiServer\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T13:38:02.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

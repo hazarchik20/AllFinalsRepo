@@ -1,0 +1,58 @@
+.sort-conatiner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px; 
+    box-sizing: border-box;
+}
+
+.sort-conatiner select,
+.sort-conatiner input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline: none;
+    background: white;
+    height: 38px;
+    box-sizing: border-box;
+}
+
+.sort-conatiner input::placeholder {
+    color: #888;
+}
+
+.sort-conatiner select:focus,
+.sort-conatiner input:focus {
+    border-color: #8bb4ff;
+    box-shadow: 0 0 3px #8bb4ff;
+}
+
+.sort-by-mark,
+.sort-by-word,
+.sort-by-priseYear {
+    flex: 1;
+}
+
+.sort-by-priseYear {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.cb-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cb-container input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #4a8dff;
+}

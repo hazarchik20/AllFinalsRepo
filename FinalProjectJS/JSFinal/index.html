@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/mainStyle.css">
+        <link rel="stylesheet" href="./css/headerStyle.css">
+        <link rel="stylesheet" href="./css/cardStyle.css">
+        <link rel="stylesheet" href="./css/modalStyle.css">
+        <link rel="stylesheet" href="./css/slideStyle.css">
+        <link rel="stylesheet" href="./css/sortStyle.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Document</title>
+    </head>
+
+    <header>
+        <h2 class="name-title" id="nameTitle">CarShop</h2>
+        <button class="add-btn" id="mainAddBtn">Add Car</button>
+    </header>
+
+    <body>
+        <div class="sort-conatiner" id="sortConatiner">
+            <div class="sort-by-mark">
+                <select id="sortType" name="sort-type" required>
+                    <option value="">--Select Make--</option>
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="citroen">Citroën</option>
+                    <option value="ford">Ford</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="kia">Kia</option>
+                    <option value="lexus">Lexus</option>
+                    <option value="mazda">Mazda</option>
+                    <option value="mercedes-benz">Mercedes-Benz</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="opel">Opel</option>
+                    <option value="peugeot">Peugeot</option>
+                    <option value="porsche">Porsche</option>
+                    <option value="renault">Renault</option>
+                    <option value="skoda">Škoda</option>
+                    <option value="subaru">Subaru</option>
+                    <option value="tesla">Tesla</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="volvo">Volvo</option>
+                </select>
+            </div>
+            <div class="sort-by-word">
+                <input type="text" id="searchWord" placeholder="Search by word...">
+            </div>
+            <div class="sort-by-priseYear">
+                <select name="sort" id="sort">
+                    <option value="price">Price</option>
+                    <option value="year">Year</option>
+                </select>
+               <label class="cb-container">
+                    <input type="radio" name="features" value="lowest">
+                    <span>From lowest price / year</span>
+                </label>
+                <label class="cb-container">
+                    <input type="radio" name="features" value="higher">
+                    <span>From higher price / year</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="card-container" id="cardContainer"></div> 
+
+        <div class="pages-container" id="pagesContainer">
+            <div class="five-to-left pageschild" id="fiveToLeft"><<</div>
+            <div class="pageschild" id="1chil">0</div>
+            <div class="pageschild" id="2chil">1</div>
+            <div class="pageschild" id="3chil">2</div>
+            <div class="five-to-rigth pageschild" id="fiveToRigth">>></div>
+
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Додати машину</h2>
+                    <button class="btn-close" id="btnClose">&times;</button>
+                </div>
+                <form id="carForm">
+                    <div>
+
+                        <label for="make">Make:</label>
+                        <input type="text" id="make" name="make" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="model">Model:</label>
+                        <input type="text" id="model" name="model" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="year">Year:</label>
+                        <input type="number" id="year" name="year" min="1900" max="2100" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="mileage">Mileage:</label>
+                        <input type="number" id="mileage" name="mileage" min="0" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="3"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="type">Type:</label>
+                        <select id="type" name="type" required>
+                            <option value="">--Select Type--</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="truck">Truck</option>
+                            <option value="coupe">Coupe</option>
+                            <option value="hatchback">Hatchback</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="price">Price ($):</label>
+                        <input type="number" id="price" name="price" min="100" step="1" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="discount">Discount (%):</label>
+                        <input type="number" id="discount" name="discount" min="0" max="90" step="1">
+                        <span class="error-message"></span>
+                    </div>
+                    <div>
+                        <label for="imageUrl">Image URL:</label>
+                        <input type="url" id="imageUrl" name="imageUrl">
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit">Save Car</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="./js/main.js"></script>
+</html>
