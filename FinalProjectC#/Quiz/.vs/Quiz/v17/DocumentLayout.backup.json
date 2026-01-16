@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1\\source\\repos\\Quiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18939B-D5BC-4A07-9783-C5917704979A}|User\\UserBll.csproj|c:\\users\\1\\source\\repos\\quiz\\user\\services\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18939B-D5BC-4A07-9783-C5917704979A}|User\\UserBll.csproj|solutionrelative:user\\services\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD02056-59C9-416E-BC0A-3386270294CE}|Quiz\\Quiz.csproj|C:\\Users\\1\\source\\repos\\Quiz\\quiz\\start\\startproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD02056-59C9-416E-BC0A-3386270294CE}|Quiz\\Quiz.csproj|solutionrelative:quiz\\start\\startproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18939B-D5BC-4A07-9783-C5917704979A}|User\\UserBll.csproj|C:\\Users\\1\\source\\repos\\Quiz\\user\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18939B-D5BC-4A07-9783-C5917704979A}|User\\UserBll.csproj|solutionrelative:user\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD02056-59C9-416E-BC0A-3386270294CE}|Quiz\\QuizProject.csproj|C:\\Users\\1\\source\\repos\\Quiz\\quiz\\lsin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD02056-59C9-416E-BC0A-3386270294CE}|Quiz\\QuizProject.csproj|solutionrelative:quiz\\lsin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartProject.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Quiz\\Quiz\\Start\\StartProject.cs",
+              "RelativeDocumentMoniker": "Quiz\\Start\\StartProject.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Quiz\\Quiz\\Start\\StartProject.cs",
+              "RelativeToolTip": "Quiz\\Start\\StartProject.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAowPoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T10:13:03.3Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Quiz\\User\\Models\\User.cs",
+              "RelativeDocumentMoniker": "User\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Quiz\\User\\Models\\User.cs",
+              "RelativeToolTip": "User\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:11:35.099Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LogIn.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Quiz\\Quiz\\LSin\\LogIn.cs",
+              "RelativeDocumentMoniker": "Quiz\\LSin\\LogIn.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Quiz\\Quiz\\LSin\\LogIn.cs",
+              "RelativeToolTip": "Quiz\\LSin\\LogIn.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:37:32.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Services.cs",
+              "DocumentMoniker": "C:\\Users\\1\\source\\repos\\Quiz\\User\\Services\\Services.cs",
+              "RelativeDocumentMoniker": "User\\Services\\Services.cs",
+              "ToolTip": "C:\\Users\\1\\source\\repos\\Quiz\\User\\Services\\Services.cs",
+              "RelativeToolTip": "User\\Services\\Services.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA5wFYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:11:36.95Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

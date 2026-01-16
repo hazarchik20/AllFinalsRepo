@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{495BA3E2-4065-478F-B648-71BA0F8D5980}|FinalCrypto_HZR\\FinalCrypto_HZR.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalcrypto_hzr\\finalcrypto_hzr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{495BA3E2-4065-478F-B648-71BA0F8D5980}|FinalCrypto_HZR\\FinalCrypto_HZR.csproj|solutionrelative:finalcrypto_hzr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalcrypto_hzr\\dll\\repository\\cryptoapirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|solutionrelative:dll\\repository\\cryptoapirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalcrypto_hzr\\dll\\model\\cryptomonet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|solutionrelative:dll\\model\\cryptomonet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{495BA3E2-4065-478F-B648-71BA0F8D5980}|FinalCrypto_HZR\\FinalCrypto_HZR.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalcrypto_hzr\\finalcrypto_hzr\\finalcrypto_hzr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{495BA3E2-4065-478F-B648-71BA0F8D5980}|FinalCrypto_HZR\\FinalCrypto_HZR.csproj|solutionrelative:finalcrypto_hzr\\finalcrypto_hzr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalcrypto_hzr\\dll\\interfaces\\irpository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|solutionrelative:dll\\interfaces\\irpository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalcrypto_hzr\\dll\\model\\quotename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{336BF051-4EF6-4990-B57A-AB352F4BFB73}|DLL\\DLL.csproj|solutionrelative:dll\\model\\quotename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 697,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\FinalCrypto_HZR\\Program.cs",
+              "RelativeDocumentMoniker": "FinalCrypto_HZR\\Program.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\FinalCrypto_HZR\\Program.cs",
+              "RelativeToolTip": "FinalCrypto_HZR\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T18:27:33.01Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CryptoAPIRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Repository\\CryptoAPIRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Repository\\CryptoAPIRepository.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Repository\\CryptoAPIRepository.cs",
+              "RelativeToolTip": "DLL\\Repository\\CryptoAPIRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwDMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:00:49.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuoteName.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Model\\QuoteName.cs",
+              "RelativeDocumentMoniker": "DLL\\Model\\QuoteName.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Model\\QuoteName.cs",
+              "RelativeToolTip": "DLL\\Model\\QuoteName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T14:26:18.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRpository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Interfaces\\IRpository.cs",
+              "RelativeDocumentMoniker": "DLL\\Interfaces\\IRpository.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Interfaces\\IRpository.cs",
+              "RelativeToolTip": "DLL\\Interfaces\\IRpository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T07:27:02.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FinalCrypto_HZR.csproj",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\FinalCrypto_HZR\\FinalCrypto_HZR.csproj",
+              "RelativeDocumentMoniker": "FinalCrypto_HZR\\FinalCrypto_HZR.csproj",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\FinalCrypto_HZR\\FinalCrypto_HZR.csproj",
+              "RelativeToolTip": "FinalCrypto_HZR\\FinalCrypto_HZR.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-05T12:59:48.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CryptoMonet.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Model\\CryptoMonet.cs",
+              "RelativeDocumentMoniker": "DLL\\Model\\CryptoMonet.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalCrypto_HZR\\DLL\\Model\\CryptoMonet.cs",
+              "RelativeToolTip": "DLL\\Model\\CryptoMonet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T09:33:08.419Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

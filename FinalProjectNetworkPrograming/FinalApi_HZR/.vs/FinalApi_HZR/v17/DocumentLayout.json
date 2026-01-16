@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\reposytory\\cryptorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\reposytory\\cryptorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47021E84-66A3-4DA7-83EB-E6660B2346AF}|FinalApi_HZR\\FinalApi_HZR.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\finalapi_hzr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47021E84-66A3-4DA7-83EB-E6660B2346AF}|FinalApi_HZR\\FinalApi_HZR.csproj|solutionrelative:finalapi_hzr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\models\\cryptomonet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\models\\cryptomonet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\models\\cmcresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\models\\cmcresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\models\\quote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\models\\quote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\models\\quotename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\models\\quotename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47021E84-66A3-4DA7-83EB-E6660B2346AF}|FinalApi_HZR\\FinalApi_HZR.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\finalapi_hzr\\finalapi_hzr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{47021E84-66A3-4DA7-83EB-E6660B2346AF}|FinalApi_HZR\\FinalApi_HZR.csproj|solutionrelative:finalapi_hzr\\finalapi_hzr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\final_hzr\\finalapi_hzr\\dll\\interfaces\\icryptorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E24D62-4A05-464F-A062-08479036264E}|DLL\\DLL.csproj|solutionrelative:dll\\interfaces\\icryptorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\FinalApi_HZR\\Program.cs",
+              "RelativeDocumentMoniker": "FinalApi_HZR\\Program.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\FinalApi_HZR\\Program.cs",
+              "RelativeToolTip": "FinalApi_HZR\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T17:48:26.968Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Migrations\\DataContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DLL\\Migrations\\DataContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Migrations\\DataContextModelSnapshot.cs",
+              "RelativeToolTip": "DLL\\Migrations\\DataContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:42:13.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FinalApi_HZR.csproj",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\FinalApi_HZR\\FinalApi_HZR.csproj",
+              "RelativeDocumentMoniker": "FinalApi_HZR\\FinalApi_HZR.csproj",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\FinalApi_HZR\\FinalApi_HZR.csproj",
+              "RelativeToolTip": "FinalApi_HZR\\FinalApi_HZR.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-08T11:28:43.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CryptoMonet.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\CryptoMonet.cs",
+              "RelativeDocumentMoniker": "DLL\\Models\\CryptoMonet.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\CryptoMonet.cs",
+              "RelativeToolTip": "DLL\\Models\\CryptoMonet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T13:17:06.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CmcResponse.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\CmcResponse.cs",
+              "RelativeDocumentMoniker": "DLL\\Models\\CmcResponse.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\CmcResponse.cs",
+              "RelativeToolTip": "DLL\\Models\\CmcResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T10:50:12.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Quote.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\Quote.cs",
+              "RelativeDocumentMoniker": "DLL\\Models\\Quote.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\Quote.cs",
+              "RelativeToolTip": "DLL\\Models\\Quote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T11:29:13.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuoteName.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\QuoteName.cs",
+              "RelativeDocumentMoniker": "DLL\\Models\\QuoteName.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Models\\QuoteName.cs",
+              "RelativeToolTip": "DLL\\Models\\QuoteName.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T11:29:13.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\DataContext.cs",
+              "RelativeDocumentMoniker": "DLL\\DataContext.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\DataContext.cs",
+              "RelativeToolTip": "DLL\\DataContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:32:39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CryptoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Reposytory\\CryptoRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Reposytory\\CryptoRepository.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Reposytory\\CryptoRepository.cs",
+              "RelativeToolTip": "DLL\\Reposytory\\CryptoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T11:03:44.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\SQLQuery1.sql",
+              "RelativeToolTip": "SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-06T11:50:34.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICryptoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Interfaces\\ICryptoRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Interfaces\\ICryptoRepository.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\Final_HZR\\FinalApi_HZR\\DLL\\Interfaces\\ICryptoRepository.cs",
+              "RelativeToolTip": "DLL\\Interfaces\\ICryptoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T11:46:09.657Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.AssemblyInfoInputs.cache
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.AssemblyInfo.cs
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.exe
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.deps.json
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.runtimeconfig.json
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.dll
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.pdb
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.dll
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\refint\FinalCrypto_HZR.dll
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.pdb
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.genruntimeconfig.cache
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\ref\FinalCrypto_HZR.dll
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\DLL.dll
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\DLL.pdb
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCry.7772CEA9.Up2Date
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.exe
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.deps.json
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.runtimeconfig.json
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\FinalCrypto_HZR.pdb
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\DLL.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\bin\Debug\net8.0\DLL.pdb
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.csproj.AssemblyReference.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.AssemblyInfoInputs.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.AssemblyInfo.cs
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.csproj.CoreCompileInputs.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.sourcelink.json
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCry.7772CEA9.Up2Date
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\refint\FinalCrypto_HZR.dll
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.pdb
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\FinalCrypto_HZR.genruntimeconfig.cache
+C:\Users\1\OneDrive\Робочий стіл\Final_HZR\FinalCrypto_HZR\FinalCrypto_HZR\obj\Debug\net8.0\ref\FinalCrypto_HZR.dll
