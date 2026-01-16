@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\bll\\services\\catcheendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|solutionrelative:bll\\services\\catcheendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\bll\\translaters\\translateblltodll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|solutionrelative:bll\\translaters\\translateblltodll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\bll\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|solutionrelative:bll\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\bll\\models\\smaleuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|solutionrelative:bll\\models\\smaleuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\dll\\repository\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|solutionrelative:dll\\repository\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\dll\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|solutionrelative:dll\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\bll\\translaters\\translatedlltobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464EE5AC-7E0D-4220-9DFB-E922AB092F0B}|BLL\\BLL.csproj|solutionrelative:bll\\translaters\\translatedlltobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\dll\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|solutionrelative:dll\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\dll\\repository\\shoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|solutionrelative:dll\\repository\\shoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\dll\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C417A7-72FB-44D3-97D0-872963278322}|DLL\\DLL.csproj|solutionrelative:dll\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521531D3-3F45-4535-93BC-A5E04D36B173}|MyShopServer\\MyShopServer.csproj|c:\\users\\1\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\allfinals_hzr\\finalprojectjs\\myshopserver\\myshopserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{521531D3-3F45-4535-93BC-A5E04D36B173}|MyShopServer\\MyShopServer.csproj|solutionrelative:myshopserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 278,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SmaleUser.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Models\\SmaleUser.cs",
+              "RelativeDocumentMoniker": "BLL\\Models\\SmaleUser.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Models\\SmaleUser.cs",
+              "RelativeToolTip": "BLL\\Models\\SmaleUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:51:29.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderRepo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Repository\\OrderRepo.cs",
+              "RelativeDocumentMoniker": "DLL\\Repository\\OrderRepo.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Repository\\OrderRepo.cs",
+              "RelativeToolTip": "DLL\\Repository\\OrderRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:13:11.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "DLL\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Models\\Cart.cs",
+              "RelativeToolTip": "DLL\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:11:21.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Repository\\UserRepo.cs",
+              "RelativeDocumentMoniker": "DLL\\Repository\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Repository\\UserRepo.cs",
+              "RelativeToolTip": "DLL\\Repository\\UserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:00:57.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BLL\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Models\\User.cs",
+              "RelativeToolTip": "BLL\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T22:32:07.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CatcheEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Services\\CatcheEndpoints.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\CatcheEndpoints.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Services\\CatcheEndpoints.cs",
+              "RelativeToolTip": "BLL\\Services\\CatcheEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T08:21:03.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\MyShopServer\\Program.cs",
+              "RelativeDocumentMoniker": "MyShopServer\\Program.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\MyShopServer\\Program.cs",
+              "RelativeToolTip": "MyShopServer\\Program.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T08:20:54.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShopRepository.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Repository\\ShopRepository.cs",
+              "RelativeDocumentMoniker": "DLL\\Repository\\ShopRepository.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\Repository\\ShopRepository.cs",
+              "RelativeToolTip": "DLL\\Repository\\ShopRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowD4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T08:13:55.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TranslateBLLtoDLL.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Translaters\\TranslateBLLtoDLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Translaters\\TranslateBLLtoDLL.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Translaters\\TranslateBLLtoDLL.cs",
+              "RelativeToolTip": "BLL\\Translaters\\TranslateBLLtoDLL.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwGkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T15:05:12.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TranslateDLLtoBLL.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Translaters\\TranslateDLLtoBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Translaters\\TranslateDLLtoBLL.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\BLL\\Translaters\\TranslateDLLtoBLL.cs",
+              "RelativeToolTip": "BLL\\Translaters\\TranslateDLLtoBLL.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T14:32:07.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\DataContext.cs",
+              "RelativeDocumentMoniker": "DLL\\DataContext.cs",
+              "ToolTip": "C:\\Users\\1\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\AllFinals_HZR\\FinalProjectJS\\MyShopServer\\DLL\\DataContext.cs",
+              "RelativeToolTip": "DLL\\DataContext.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAIwJIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T12:51:57.782Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
