@@ -18,7 +18,7 @@ import NotFound from './pages/NotFound.jsx'
 
 import { useAuth } from './hooks/useAuth.js'
 
-import './App.scss'
+import './styles/App.scss'
 import { CartProvider } from './context/СartContext.jsx'
 import OrdersAdmin from './pages/AdminPages/OrdersAdmin.jsx'
 
@@ -30,21 +30,22 @@ function App() {
     logIn,
     logOut
   } = useAuth();
-  
+console.log(user);
+
   return (
-    <CartProvider>
+   <CartProvider key={user?.Id ?? "guest"} userId={user?.Id}>
       <div className='app'>
         <NavBar
           isLogined={isLogined}
           isAdmin={user?.IsAdmin}
-          email={user?.email}
+          user={user}
           logOut={logOut}
         />
         <div className="main-wrapper">
           <Routes>
             <Route path='/' element={<Home />} />
 
-            <Route path='/furnitures' element={<Furnitures isAdmin={user?.IsAdmin} />} />
+            <Route path='/furnitures' element={<Furnitures isAdmin={user?.IsAdmin} userId ={user?.Id} />} />
             <Route path='/furnitures/add' element={
               <ProtectedRoute isAuthReady={isAuthReady} isValiidity={user?.IsAdmin}>
                 <AddUpdateFurnitures />

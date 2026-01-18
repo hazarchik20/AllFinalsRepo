@@ -1,11 +1,13 @@
 import clsx from 'clsx';
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/СartContext';
 import { deleteFurniture } from '../../api/services/furnitureServices';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 const Furniture = ({ furniture, fromAll, isAdmin }) => {
+    const { addItem } = useCart();
+    const navigate = useNavigate();
     const {
         Id: id,
         Name: name,
@@ -16,7 +18,6 @@ const Furniture = ({ furniture, fromAll, isAdmin }) => {
         Count: count,
         Category: category
     } = furniture;
-    const { addItem } = useCart();
     const queryClient = useQueryClient();
 
     const deleteMutation = useMutation({
@@ -30,7 +31,7 @@ const Furniture = ({ furniture, fromAll, isAdmin }) => {
     const finalPrice = hasDiscount ? price * (1 - discount / 100) : price;
 
     return (
-        <div className="furniture-card">
+        <div className={`furniture-card ${!fromAll ? "furniture-card--details" : ""}`}>
             <div className="image-wrapper">
                 <img src={image} alt={name} />
                 {hasDiscount && (
@@ -59,15 +60,17 @@ const Furniture = ({ furniture, fromAll, isAdmin }) => {
             <div className="card-footer">
                 {
                     fromAll ?
-                        <Link to={isAdmin ? `/addFurniture/${id}` : `/furniture/details/${id}`} className="more-btn btn">{isAdmin ? "Редагувати  →" : "Детальніше →"}</Link>
+                        <Link to={isAdmin ? `/furnitures/update/${id}` : `/furniture/details/${id}`} className="more-btn btn">{isAdmin ? "Редагувати  →" : "Детальніше →"}</Link>
                         :
                         <button
-                            className={"buy-btn btn"}
-                            onClick={
-                                () => { addItem(furniture) }
-                            }
-                            disabled={count === 0}>
-                            {count > 0 ? 'Додати у кошик' : 'Очікується'}
+                            className="buy-btn btn"
+                            disabled={count === 0}
+                            onClick={() => {
+                                addItem(furniture);
+                                navigate("/furnitures", { state: { openCart: true } });
+                            }}
+                        >
+                            Додати у кошик
                         </button>
                 }
                 {isAdmin &&

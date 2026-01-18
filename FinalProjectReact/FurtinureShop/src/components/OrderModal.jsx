@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useCart } from "../context/СartContext";
 import { useMutation } from "@tanstack/react-query";
 import { createOrder } from "../api/services/orderServices";
-
-const OrderModal = ({ isOpen, onClose }) => {
+import "../styles/modal.scss"
+const OrderModal = ({ isOpen, onClose, userId }) => {
   const { items, total, clearCart } = useCart();
-console.log("order modal");
+
 
   const [form, setForm] = useState({
     phone: "",
@@ -46,6 +46,7 @@ console.log("order modal");
         furnitureId: i.Id,
         quantity: i.quantity,
       })),
+      userId: userId||0
     };
 
     mutation.mutate(order);

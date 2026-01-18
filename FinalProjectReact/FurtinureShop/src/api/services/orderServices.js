@@ -21,6 +21,8 @@ export const createOrder  = async (order) => {
 };
 
 export const updateOrder  = async (order) => {
+  console.log(order);
+   
   const { data } = await api.put("/order");
   return data;
 };

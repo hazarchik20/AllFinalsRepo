@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FiSettings } from "react-icons/fi";
 import AdminDropdown from "./AdminDropdown.jsx"
 import { NavLink } from 'react-router-dom'
-const NavBar = ({ isLogined, isAdmin, email, logOut }) => {
+import "../styles/navBar.scss"
+import ProfileModal from './ProfileModal.jsx';
+const NavBar = ({ isLogined, isAdmin, user, logOut }) => {
+    
+    const [isProfileModalOpen,setIsProfileModalOpen] = useState(false)
     
     const adminMenus = [
         {
@@ -32,10 +36,8 @@ const NavBar = ({ isLogined, isAdmin, email, logOut }) => {
                 <NavLink to="/options" className="nav-link">
                    <FiSettings className='silver-antique-text' size={20} />
                 </NavLink>
-                
-                {isLogined && (
-                    <p className="email">{email}</p>
-                )}
+                <button onClick={()=>setIsProfileModalOpen(true)} className="email-btn">{user?.Email}</button>
+               
             </div>
 
             <div className="logo">Furniture</div>
@@ -71,6 +73,7 @@ const NavBar = ({ isLogined, isAdmin, email, logOut }) => {
                     </button>
                 )}
             </div>
+            {isProfileModalOpen && <ProfileModal user = {user} onClose ={()=>setIsProfileModalOpen(false)}/>}
         </nav>
     );
 };

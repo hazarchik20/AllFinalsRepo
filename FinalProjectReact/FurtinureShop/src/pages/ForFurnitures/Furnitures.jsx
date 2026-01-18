@@ -1,13 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Furniture from "./Furniture.jsx"
 import { useQuery } from '@tanstack/react-query'
+import { useLocation } from "react-router-dom";
 import { getFurnitures } from '../../api/services/furnitureServices'
 import CartModal from '../../components/CartModal.jsx';
 
-const Furnitures = ({isAdmin}) => {
+import "../../styles/furnitures.scss"
+import "../../styles/modal.scss"
 
-    
+import { getCategories } from '../../api/services/categoryServices.js';
+
+const Furnitures = ({ isAdmin, userId }) => {
+    const location = useLocation();
+
+
     const [isCartOpen, setIsCartOpen] = useState(false);
+
+    useEffect(() => {
+        if (location.state?.openCart) {
+            setIsCartOpen(true);
+            window.history.replaceState({}, document.title);
+        }
+    }, [location.state]);
     const [filters, setFilters] = useState({
         page: 1,
         pageSize: 8,
@@ -23,6 +37,18 @@ const Furnitures = ({isAdmin}) => {
         queryKey: ["furnitures", filters],
         queryFn: () => getFurnitures(filters),
         placeholderData: (prev) => prev,
+        staleTime: 1000 * 60 * 2,
+        cacheTime: 1000 * 60 * 10,
+        keepPreviousData: true,
+    });
+
+    const {
+        data: categories = [],
+        isLoading: categoriesLoading,
+    } = useQuery({
+        queryKey: ["categories"],
+        queryFn: getCategories,
+        staleTime: 1000 * 60 * 5,
     });
 
     const furnitures = data?.items ?? [];
@@ -62,10 +88,15 @@ const Furnitures = ({isAdmin}) => {
                             page: 1,
                         }))
                     }
+                    disabled={categoriesLoading}
                 >
                     <option value="">Усі категорії</option>
-                    <option value="1">Мʼякі меблі</option>
-                    <option value="2">Столи</option>
+
+                    {categories.map(category => (
+                        <option key={category.Id} value={category.Id}>
+                            {category.Name}
+                        </option>
+                    ))}
                 </select>
 
                 <input
@@ -121,7 +152,7 @@ const Furnitures = ({isAdmin}) => {
 
                 <div className="furniture-grid">
                     {furnitures.map(f => (
-                        <Furniture key={f.Id} furniture={f} fromAll={true} isAdmin={isAdmin}/>
+                        <Furniture key={f.Id} furniture={f} fromAll={true} isAdmin={isAdmin} />
                     ))}
                 </div>
 
@@ -147,10 +178,12 @@ const Furnitures = ({isAdmin}) => {
                     </button>
                 </div>
             </section>
-            <button  className="floating-cart-btn"  onClick={() => setIsCartOpen(true)}>🛒</button>
+            {!isAdmin && <button className="floating-cart-btn" onClick={() => setIsCartOpen(true)}>🛒</button>}
+
 
             <CartModal
                 isOpen={isCartOpen}
+                userId={userId}
                 onClose={() => setIsCartOpen(false)}
             />
         </div>

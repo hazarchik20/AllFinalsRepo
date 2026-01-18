@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../api/api"
+import "../../styles/auth.scss"
 
 const Register = () => {
-    const [userName, setUserName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [UserName, setUserName] = useState("");
+    const [Email, setEmail] = useState("");
+    const [Password, setPassword] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
 
@@ -13,22 +14,22 @@ const Register = () => {
         e.preventDefault();
 
        
-        if (!userName || !email || !password) {
+        if (!UserName || !Email || !Password) {
             setError("Заповніть всі поля");
             return;
         }
 
-        if (password.length < 6) {
+        if (Password.length < 6) {
             setError("Пароль має містити мінімум 6 символів");
             return;
         }
 
         try {
             await api.post("/user", {
-                userName,
-                email,
-                password,
-                isAdmin: false,
+                UserName,
+                Email,
+                Password,
+                IsAdmin: false,
                 IsBlocked: false
             });
 
@@ -47,7 +48,7 @@ const Register = () => {
                 <input
                     type="text"
                     placeholder="Ваше імʼя"
-                    value={userName}
+                    value={UserName}
                     onChange={(e) => setUserName(e.target.value)}
                 />
 
@@ -55,7 +56,7 @@ const Register = () => {
                 <input
                     type="email"
                     placeholder="example@gmail.com"
-                    value={email}
+                    value={Email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
 
@@ -63,7 +64,7 @@ const Register = () => {
                 <input
                     type="password"
                     placeholder="Мінімум 6 символів"
-                    value={password}
+                    value={Password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
 

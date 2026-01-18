@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../api/api";
+import "../../styles/auth.scss"
 
 const Login = ({ onLogIn }) => {
   const [email, setEmail] = useState("");
@@ -21,7 +22,7 @@ const Login = ({ onLogIn }) => {
     },
 
     onSuccess: (user) => {
-      onLogIn(user);            // 🔥 передаємо ВЕСЬ user
+      onLogIn(user);          
       navigate("/furnitures");
     },
 

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 import { getOrdersByUserId, updateOrder } from "../../api/services/orderServices";
+import "../../styles/adminPages.scss"
 
 const orderStates = [
   "CREATED",
@@ -51,18 +52,18 @@ const OrdersAdmin = () => {
 
         <tbody>
           {orders.map((order) => (
-            <tr key={order.id}>
-              <td>{order.id}</td>
-              <td>{order.phone}</td>
-              <td>{order.comment}</td>
-              <td>{order.address?.street}</td>
+            <tr key={order.Id}>
+              <td>{order.Id}</td>
+              <td>{order.Phone}</td>
+              <td>{order.Comment}</td>
+              <td>{`${order.Address?.City} ${order.Address?.Street} ${order.Address?.HouseNumber}`}</td>
 
               <td>
                 <select
-                  defaultValue={order.state}
+                  defaultValue={order.State}
                   onChange={(e) =>
                     mutation.mutate({
-                      orderId: order.id,
+                      orderId: order.Id,
                       state: e.target.value,
                     })
                   }

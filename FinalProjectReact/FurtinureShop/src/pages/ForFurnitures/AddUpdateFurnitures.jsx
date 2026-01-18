@@ -9,27 +9,30 @@ import {
 } from "../../api/services/furnitureServices";
 import { getCategories } from "../../api/services/categoryServices";
 
+import "../../styles/furnitures.scss";
+
 const emptyForm = {
-  name: "",
-  description: "",
-  price: "",
-  discount: "",
-  count: "",
-  image: "",
-  categoryId: "",
+  Name: "",
+  Description: "",
+  Price: "",
+  Discount: "",
+  Count: "",
+  Image: "",
+  CategoryId: "",
 };
 
 const AddUpdateFurnitures = () => {
-  const { id } = useParams();  
+  const { id } = useParams();
   const isEdit = Boolean(id);
 
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const [error, setError] = useState("");
-  const [form, setForm] = useState(emptyForm);
+  const [Form, setForm] = useState(emptyForm);
 
+  // Отримання товару
   const {
-    data: furniture,
+    data: Furniture,
     isLoading: furnitureLoading,
     isError: furnitureError,
   } = useQuery({
@@ -39,21 +42,22 @@ const AddUpdateFurnitures = () => {
   });
 
   useEffect(() => {
-    if (furniture) {
+    if (Furniture) {
       setForm({
-        name: furniture.Name ?? "",
-        description: furniture.Description ?? "",
-        price: furniture.Price ?? "",
-        discount: furniture.Discount ?? "",
-        count: furniture.Count ?? "",
-        image: furniture.Image ?? "",
-        categoryId: furniture.CategoryId ?? "",
+        Name: Furniture.Name ?? "",
+        Description: Furniture.Description ?? "",
+        Price: Furniture.Price ?? "",
+        Discount: Furniture.Discount ?? "",
+        Count: Furniture.Count ?? "",
+        Image: Furniture.Image ?? "",
+        CategoryId: Furniture.CategoryId ?? "",
       });
     }
-  }, [furniture]);
+  }, [Furniture]);
 
+  // Отримання категорій
   const {
-    data: categories = [],
+    data: Categories = [],
     isLoading: categoriesLoading,
     isError: categoriesError,
   } = useQuery({
@@ -61,18 +65,17 @@ const AddUpdateFurnitures = () => {
     queryFn: getCategories,
   });
 
-  
+  // Мутація
   const mutation = useMutation({
     mutationFn: (data) =>
-      isEdit ? updateFurniture(id, data) : createFurniture(data),
+      isEdit ? updateFurniture({ id, furniture: data }) : createFurniture(data),
     onSuccess: () => {
-      queryClient.invalidateQueries(["furnitures"]);
+      queryClient.invalidateQueries({ queryKey: ["furnitures"] });
+      queryClient.invalidateQueries({ queryKey: ["furniture", id] });
       navigate("/furnitures");
     },
     onError: () => {
-      setError(
-        isEdit ? "Помилка оновлення товару" : "Помилка додавання товару"
-      );
+      setError(isEdit ? "Помилка оновлення товару" : "Помилка додавання товару");
     },
   });
 
@@ -84,17 +87,17 @@ const AddUpdateFurnitures = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.price || !form.categoryId) {
+    if (!Form.Name || !Form.Price || !Form.CategoryId) {
       setError("Заповніть обовʼязкові поля");
       return;
     }
 
     mutation.mutate({
-      ...form,
-      price: Number(form.price),
-      discount: Number(form.discount),
-      count: Number(form.count),
-      categoryId: Number(form.categoryId),
+      ...Form,
+      Price: Number(Form.Price),
+      Discount: Number(Form.Discount),
+      Count: Number(Form.Count),
+      CategoryId: Number(Form.CategoryId),
     });
   };
 
@@ -104,58 +107,56 @@ const AddUpdateFurnitures = () => {
 
   return (
     <main className="add-furniture">
-      <h1 className="title">
-        {isEdit ? "Редагувати товар" : "Додати товар"}
-      </h1>
+      <h1 className="title">{isEdit ? "Редагувати товар" : "Додати товар"}</h1>
 
       {error && <p className="error">{error}</p>}
 
       <form onSubmit={handleSubmit}>
         <label>Назва *</label>
-        <input name="name" value={form.name} onChange={handleChange} />
+        <input name="Name" value={Form.Name} onChange={handleChange} />
 
         <label>Опис</label>
         <textarea
-          name="description"
-          value={form.description}
+          name="Description"
+          value={Form.Description}
           onChange={handleChange}
         />
 
         <label>Ціна *</label>
         <input
           type="number"
-          name="price"
-          value={form.price}
+          name="Price"
+          value={Form.Price}
           onChange={handleChange}
         />
 
         <label>Знижка (%)</label>
         <input
           type="number"
-          name="discount"
-          value={form.discount}
+          name="Discount"
+          value={Form.Discount}
           onChange={handleChange}
         />
 
         <label>Кількість</label>
         <input
           type="number"
-          name="count"
-          value={form.count}
+          name="Count"
+          value={Form.Count}
           onChange={handleChange}
         />
 
         <label>Зображення (URL)</label>
-        <input name="image" value={form.image} onChange={handleChange} />
+        <input name="Image" value={Form.Image} onChange={handleChange} />
 
         <label>Категорія *</label>
         <select
-          name="categoryId"
-          value={form.categoryId}
+          name="CategoryId"
+          value={Form.CategoryId}
           onChange={handleChange}
         >
           <option value="">-- Оберіть категорію --</option>
-          {categories.map((c) => (
+          {Categories.map((c) => (
             <option key={c.Id} value={c.Id}>
               {c.Name}
             </option>

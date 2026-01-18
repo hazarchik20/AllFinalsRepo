@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+$color-oldWood :#3a311d;
+$color-bordo: #991f1f;
+$danger-color: #ef4444;
+$success-color: #16a34a;
+$text-gold: linear-gradient(135deg,
+        #755d3b,
+        #c9a24d,
+        #f5e6a8,
+        #8c6f2f);
+$text-silver: linear-gradient(135deg,
+        #5a5a5a 0%,
+        #b3b3b3 20%,
+        #979797 40%,
+        #a0a0a0 60%,
+        #666666 100%);
+;
+$border-color: #e5e7eb;
+$transition: all 0.3s ease;
+
+.app {
+    background-color: #660005;
+    min-width: 360px;
+}
+
+.main-wrapper {
+    padding: 20px;
+    color: #fff;
+    min-height: 100vh
+}
+
+.main-wrapper-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,13 @@ import {
   deleteCategory,
 } from "../../api/services/categoryServices";
 
+
+import "../../styles/adminPages.scss"
+import DeleteModal from "../../components/DeleteModal";
 const CategoryAdmin = () => {
+
+  const [isOpenDeleteModal, setIsOpenDeleteModal] = useState(false);
+  const [confirmFunctionForDelete, setConfirmFunctionForDelete] = useState(null);
   const queryClient = useQueryClient();
   const [name, setName] = useState("");
 
@@ -29,6 +35,13 @@ const CategoryAdmin = () => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["categories"] });
     },
+    onError: (error) => {
+      if (error.response && error.response.status === 409) {
+        alert("Неможливо видалити категорію: спочатку потрібно видалити всі залежні продукти");
+      } else {
+        alert("Сталася помилка при видаленні: " + (error.response?.data?.message || error.message));
+      }
+    }
   });
 
   const handleSubmit = (e) => {
@@ -64,10 +77,7 @@ const CategoryAdmin = () => {
                 <td>
                   <button
                     className="btn delete"
-                    onClick={() =>
-                      confirm("Видалити категорію?") &&
-                      deleteMutation.mutate(c.Id)
-                    }
+                    onClick={() =>{setIsOpenDeleteModal(true); setConfirmFunctionForDelete(()=> ()=>deleteMutation.mutate(c.Id))}}
                   >
                     ✖
                   </button>
@@ -95,6 +105,10 @@ const CategoryAdmin = () => {
           </button>
         </form>
       </div>
+       <DeleteModal
+          isOpen={isOpenDeleteModal} 
+          onConfirm={() => { confirmFunctionForDelete?.(); setIsOpenDeleteModal(false);}}
+          onCancel={() => setIsOpenDeleteModal(false)}/>
     </div>
   );
 };
