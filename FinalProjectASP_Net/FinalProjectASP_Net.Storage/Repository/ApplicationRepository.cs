@@ -33,12 +33,12 @@ namespace FinalProjectASP_Net.Storage.Repository
            return await _dataContext.Applications.AnyAsync(a => a.EmployeeId == employeeId && a.VacancyId == vacancyId);
         }
 
-        public async Task<IEnumerable<Application>> GetAll()
+        public async Task<IEnumerable<Application>> GetAll(int limit, int offset)
         {
            return await _dataContext.Applications.ToListAsync();
         }
 
-        public async Task<IEnumerable<Application>> GetByEmployee(int employeeId)
+        public async Task<IEnumerable<Application>> GetByEmployee(int employeeId, int limit, int offset)
         {
           return await _dataContext.Applications.Where(a => a.EmployeeId == employeeId).ToListAsync();
         }
@@ -48,7 +48,7 @@ namespace FinalProjectASP_Net.Storage.Repository
             return await _dataContext.Applications.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Application>> GetByVacancy(int vacancyId)
+        public async Task<IEnumerable<Application>> GetByVacancy(int vacancyId, int limit, int offset)
         {
             return await _dataContext.Applications.Where(a => a.VacancyId == vacancyId).ToListAsync();
         }

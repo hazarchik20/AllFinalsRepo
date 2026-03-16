@@ -28,17 +28,17 @@ namespace FinalProjectASP_Net.Storage.Repository
             await _dataContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Vacancy>> GetActiveVacancies()
+        public async Task<IEnumerable<Vacancy>> GetActiveVacancies(int limit, int offset)
         {
             return await _dataContext.Vacancies.Where(v => v.IsActive).ToListAsync();
         }
 
-        public async Task<IEnumerable<Vacancy>> GetAll()
+        public async Task<IEnumerable<Vacancy>> GetAll(int limit, int offset)
         {
            return await _dataContext.Vacancies.ToListAsync();
         }
 
-        public async Task<IEnumerable<Vacancy>> GetByCompany(int companyId)
+        public async Task<IEnumerable<Vacancy>> GetByCompany(int companyId, int limit, int offset)
         {
             return await _dataContext.Vacancies.Where(v => v.CompanyId == companyId).ToListAsync();
         }

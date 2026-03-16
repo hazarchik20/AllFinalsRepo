@@ -29,12 +29,12 @@ namespace FinalProjectASP_Net.Storage.Repository
             await _dataContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Admin>> GetAdmins()
+        public async Task<IEnumerable<Admin>> GetAdmins(int limit, int offset)
         {
             return await _dataContext.UserBases.OfType<Admin>().ToListAsync();
         }
 
-        public async Task<IEnumerable<UserBase>> GetAll()
+        public async Task<IEnumerable<UserBase>> GetAll(int limit, int offset)
         {
             return await _dataContext.UserBases.ToListAsync();
         }
@@ -49,12 +49,12 @@ namespace FinalProjectASP_Net.Storage.Repository
            return await _dataContext.UserBases.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Employee>> GetEmployee()
+        public async Task<IEnumerable<Employee>> GetEmployee(int limit, int offset)
         {
             return await _dataContext.UserBases.OfType<Employee>().ToListAsync();
         }
 
-        public async Task<IEnumerable<HRUser>> GetHRUsers()
+        public async Task<IEnumerable<HRUser>> GetHRUsers(int limit, int offset)
         {
             return await _dataContext.UserBases.OfType<HRUser>().ToListAsync();
         }

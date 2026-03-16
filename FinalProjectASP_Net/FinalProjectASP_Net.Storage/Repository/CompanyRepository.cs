@@ -29,7 +29,7 @@ namespace FinalProjectASP_Net.Storage.Repository
             await _dataContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Company>> GetAll()
+        public async Task<IEnumerable<Company>> GetAll(int limit, int offset)
         {
             return await _dataContext.Companies.ToListAsync();
         }
