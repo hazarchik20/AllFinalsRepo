@@ -89,6 +89,11 @@ namespace FinalProjectASP_Net.Storage
             modelBuilder.Entity<Application>()
                 .Property(a => a.ApplicationDate)
                 .HasDefaultValueSql("GETUTCDATE()");
+
+            //Application status default
+            modelBuilder.Entity<Application>()
+                .Property(a => a.Status)
+                .HasDefaultValue(ApplicationStatus.Pending);
         }
     }
 }

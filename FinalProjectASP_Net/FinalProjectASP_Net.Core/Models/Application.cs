@@ -14,6 +14,13 @@ namespace FinalProjectASP_Net.Core.Models
         public int VacancyId { get; set; }
         public Vacancy Vacancy { get; set; }
         public DateTime ApplicationDate { get; set; }
+        public ApplicationStatus Status { get; set; } 
         public string CvPath { get; set; }// треба дописати запис CV в хмару( можливов якийсь файл поки ) і зберігати шлях до нього в базі даних
+    }
+    public enum ApplicationStatus
+    {
+        Pending,
+        Accepted,
+        Rejected
     }
 }

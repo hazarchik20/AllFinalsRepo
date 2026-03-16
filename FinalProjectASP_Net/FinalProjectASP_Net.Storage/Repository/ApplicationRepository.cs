@@ -52,6 +52,17 @@ namespace FinalProjectASP_Net.Storage.Repository
         {
             return await _dataContext.Applications.Where(a => a.VacancyId == vacancyId).ToListAsync();
         }
+        public async Task UpdateStatus(string status, int applicationsId)
+        {
+            var application = await _dataContext.Applications.FindAsync(applicationsId);
+            if (application != null)
+            {
+                
+                application.Status = new ApplicationStatus;
+                _dataContext.Applications.Update(application);
+                await _dataContext.SaveChangesAsync();
+            }
+        }
 
         public async Task Update(Application entity)
         {
