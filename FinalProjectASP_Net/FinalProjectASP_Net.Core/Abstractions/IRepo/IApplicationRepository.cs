@@ -10,8 +10,8 @@ namespace FinalProjectASP_Net.Core.Abstractions.IRepo
 {
     public interface IApplicationRepository : IBaseRepository<Application>
     {
-        Task<IEnumerable<Application>> GetByEmployee(int employeeId);
-        Task<IEnumerable<Application>> GetByVacancy(int vacancyId);
+        Task<IEnumerable<Application>> GetByEmployee(int employeeId, int limit, int offset);
+        Task<IEnumerable<Application>> GetByVacancy(int vacancyId, int limit, int offset);
 
         Task<bool> Exists(int employeeId, int vacancyId);
     }

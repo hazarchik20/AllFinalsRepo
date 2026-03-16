@@ -10,7 +10,7 @@ namespace FinalProjectASP_Net.Core.Abstractions.IRepo
 {
     public interface IVacancyRepository : IBaseRepository<Vacancy>
     {
-        Task<IEnumerable<Vacancy>> GetActiveVacancies();
-        Task<IEnumerable<Vacancy>> GetByCompany(int companyId);
+        Task<IEnumerable<Vacancy>> GetActiveVacancies(int limit, int offset);
+        Task<IEnumerable<Vacancy>> GetByCompany(int companyId, int limit, int offset);
     }
 }

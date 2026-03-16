@@ -12,8 +12,8 @@ namespace FinalProjectASP_Net.Core.Abstractions.IRepo
     public interface IUserRepository : IBaseRepository<UserBase>
     {
         Task<UserBase?> GetByEmail(string email);
-        Task<IEnumerable<Employee>> GetEmployee();
-        Task<IEnumerable<HRUser>> GetHRUsers();
-        Task<IEnumerable<Admin>> GetAdmins();
+        Task<IEnumerable<Employee>> GetEmployee(int limit, int offset);
+        Task<IEnumerable<HRUser>> GetHRUsers(int limit, int offset);
+        Task<IEnumerable<Admin>> GetAdmins(int limit, int offset);
     }
 }
