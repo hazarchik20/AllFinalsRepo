@@ -1,17 +1,27 @@
+using FinalProjectASP_Net.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 
+
+builder.Services.AddRepositories();
+builder.Services.AddServices();
+
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
+app.UseAuthentication(); // хто ти
+app.UseAuthorization();  // що ти можеш
+
+
+app.UseMiddleware();
+
 
 app.MapControllers();
-
 app.Run();

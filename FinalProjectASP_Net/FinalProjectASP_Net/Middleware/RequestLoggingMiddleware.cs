@@ -11,12 +11,18 @@
 
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
-            _logger.LogInformation(
-                "Request {method} {url}",
-                context.Request.Method,
-                context.Request.Path);
+            var start = DateTime.UtcNow;
 
             await next(context);
+
+            var duration = DateTime.UtcNow - start;
+
+            _logger.LogInformation(
+                "HTTP {Method} {Path} responded {StatusCode} in {Duration} ms",
+                context.Request.Method,
+                context.Request.Path,
+                context.Response.StatusCode,
+                duration.TotalMilliseconds);
         }
     }
 }
