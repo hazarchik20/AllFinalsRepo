@@ -15,5 +15,6 @@ namespace FinalProjectASP_Net.Core.Abstractions.IRepo
         Task<IEnumerable<Employee>> GetEmployee(int limit, int offset);
         Task<IEnumerable<HRUser>> GetHRUsers(int limit, int offset);
         Task<IEnumerable<Admin>> GetAdmins(int limit, int offset);
+        Task <bool> IsEmailTaken(string email);
     }
 }

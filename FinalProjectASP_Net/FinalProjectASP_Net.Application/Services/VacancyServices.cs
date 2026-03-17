@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinalProjectASP_Net.Core.Models.Users
+namespace FinalProjectASP_Net.Application.Services
 {
-    public class Admin : UserBase
+    internal class VacancyServices
     {
     }
 }

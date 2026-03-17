@@ -28,6 +28,10 @@ namespace FinalProjectASP_Net.Storage.Repository
             _dataContext.UserBases.Remove(entity);
             await _dataContext.SaveChangesAsync();
         }
+        public Task<bool> IsEmailTaken(string email)
+        {
+            return _dataContext.UserBases.AnyAsync(u => u.Email == email);
+        }
 
         public async Task<IEnumerable<Admin>> GetAdmins(int limit, int offset)
         {
