@@ -58,7 +58,7 @@ namespace FinalProjectASP_Net.Storage.Repository
             if (application != null)
             {
                 
-                application.Status = new ApplicationStatus;
+                application.Status = new ApplicationStatus();
                 _dataContext.Applications.Update(application);
                 await _dataContext.SaveChangesAsync();
             }

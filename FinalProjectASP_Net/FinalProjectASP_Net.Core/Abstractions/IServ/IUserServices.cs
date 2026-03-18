@@ -1,4 +1,5 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.Base;
+using FinalProjectASP_Net.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,7 @@ namespace FinalProjectASP_Net.Core.Abstractions.IServ
 {
     public interface IUserServices : IBaseServices
     {
+        Task<UserResponse> Login(LoginUserRequest request);
+        Task<UserResponse> Register(RegisterUserRequest request);
     }
 }

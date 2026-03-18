@@ -1,4 +1,5 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IRepo;
+using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Exceptions;
 using FinalProjectASP_Net.Core.Models;
 using Microsoft.Extensions.Logging;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Application.Services
 {
-    public class UserServices
+    public class UserServices : IUserServices
     {
 
         private readonly IUserRepository _userRepository;

@@ -1,5 +1,7 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IRepo;
+using FinalProjectASP_Net.Storage;
 using FinalProjectASP_Net.Storage.Repository;
+using Microsoft.EntityFrameworkCore;
 
 
 
@@ -12,6 +14,7 @@ namespace FinalProjectASP_Net.Extensions
         {
             // Here you can add your repositories, for example:
             // services.AddScoped<IMyRepository, MyRepository>();
+
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IVacancyRepository, VacancyRepository>();
             services.AddScoped<IApplicationRepository, ApplicationRepository>();
