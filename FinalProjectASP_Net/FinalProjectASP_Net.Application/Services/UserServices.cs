@@ -73,5 +73,41 @@ namespace FinalProjectASP_Net.Application.Services
                 Token = token,
                 Role = user.Role.ToString() 
             };
+
+        public async Task<IEnumerable<UserBase>> GetAll(int limit, int offset)
+        {
+            return await _userRepository.GetAll(limit, offset);
+        }
+
+        public async Task<UserBase?> GetById(int id)
+        {
+            return await _userRepository.GetById(id);
+        }
+
+        public async Task Add(UserBase entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+
+            await _userRepository.Add(entity);
+        }
+
+        public async Task Update(UserBase entity)
+        {
+            if (entity == null)
+                throw new ArgumentNullException(nameof(entity));
+
+            var existingUser = await _userRepository.GetById(entity.Id);
+
+            if (existingUser == null)
+                throw new Exception("User not found");
+
+            await _userRepository.Update(entity);
+        }
+
+        public async Task Delete(UserBase user)
+        {
+            await _userRepository.Delete(user);
+        }
     }
 }

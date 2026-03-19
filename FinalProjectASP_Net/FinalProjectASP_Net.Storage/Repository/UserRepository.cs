@@ -35,12 +35,19 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Admin>> GetAdmins(int limit, int offset)
         {
-            return await _dataContext.UserBases.OfType<Admin>().ToListAsync();
+            return await _dataContext.UserBases
+                .OfType<Admin>()
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<UserBase>> GetAll(int limit, int offset)
         {
-            return await _dataContext.UserBases.ToListAsync();
+            return await _dataContext.UserBases
+                .Take(limit)
+                .Skip(offset).
+                ToListAsync();
         }
 
         public async Task<UserBase?> GetByEmail(string email)
@@ -55,12 +62,20 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Employee>> GetEmployee(int limit, int offset)
         {
-            return await _dataContext.UserBases.OfType<Employee>().ToListAsync();
+            return await _dataContext.UserBases
+                .OfType<Employee>()
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<HRUser>> GetHRUsers(int limit, int offset)
         {
-            return await _dataContext.UserBases.OfType<HRUser>().ToListAsync();
+            return await _dataContext.UserBases
+                .OfType<HRUser>()
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
 
         public async Task Update(UserBase entity)

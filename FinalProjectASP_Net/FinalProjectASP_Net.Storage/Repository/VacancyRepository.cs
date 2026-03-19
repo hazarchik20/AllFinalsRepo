@@ -35,7 +35,10 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Vacancy>> GetAll(int limit, int offset)
         {
-           return await _dataContext.Vacancies.ToListAsync();
+           return await _dataContext.Vacancies
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Vacancy>> GetByCompany(int companyId, int limit, int offset)

@@ -10,6 +10,7 @@ namespace FinalProjectASP_Net.Extensions
             // Here you can add your custom services, for example:
             // services.AddScoped<IMyService, MyService>();
             services.AddScoped<IUserServices, UserServices>();
+            services.AddScoped<IVacancyServices, VacancyServices>();
             services.AddScoped<JwtTokenGenerator>();
             return services;
 

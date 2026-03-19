@@ -31,7 +31,10 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Company>> GetAll(int limit, int offset)
         {
-            return await _dataContext.Companies.ToListAsync();
+            return await _dataContext.Companies
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
 
         public async Task<Company?> GetById(int id)

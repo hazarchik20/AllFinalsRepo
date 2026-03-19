@@ -35,12 +35,20 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Application>> GetAll(int limit, int offset)
         {
-           return await _dataContext.Applications.ToListAsync();
+           return await _dataContext.Applications
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Application>> GetByEmployee(int employeeId, int limit, int offset)
         {
-          return await _dataContext.Applications.Where(a => a.EmployeeId == employeeId).ToListAsync();
+          return await _dataContext.Applications
+                .Where(a => a.EmployeeId == employeeId)
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
+
         }
 
         public async Task<Application?> GetById(int id)
@@ -50,7 +58,11 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Application>> GetByVacancy(int vacancyId, int limit, int offset)
         {
-            return await _dataContext.Applications.Where(a => a.VacancyId == vacancyId).ToListAsync();
+            return await _dataContext.Applications
+                .Where(a => a.VacancyId == vacancyId)
+                .Take(limit)
+                .Skip(offset)
+                .ToListAsync();
         }
         public async Task UpdateStatus(string status, int applicationsId)
         {

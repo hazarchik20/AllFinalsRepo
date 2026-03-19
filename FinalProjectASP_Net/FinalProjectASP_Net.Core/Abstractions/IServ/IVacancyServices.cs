@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Core.Abstractions.IServ
 {
-    public interface IUserServices : IBaseServices<UserBase>
+    public interface IVacancyServices : IBaseServices<Vacancy>
     {
-        Task<UserResponse> Login(LoginUserRequest request);
-        Task<UserResponse> Register(RegisterUserRequest request);
-
+        Task<IEnumerable<Vacancy>> GetActive(int limit, int offset);
+        Task<IEnumerable<Vacancy>> GetByCompany(int companyId, int limit, int offset);
     }
 }
