@@ -86,10 +86,7 @@ namespace FinalProjectASP_Net.Application.Services
 
         public async Task Add(UserBase entity)
         {
-            if (entity == null)
-                throw new ArgumentNullException(nameof(entity));
-
-            await _userRepository.Add(entity);
+            throw new NotImplementedException("Use Register method to create a new user");
         }
 
         public async Task Update(UserBase entity)
@@ -105,9 +102,24 @@ namespace FinalProjectASP_Net.Application.Services
             await _userRepository.Update(entity);
         }
 
-        public async Task Delete(UserBase user)
+        public async Task Delete(int id)
         {
+            var user = await _userRepository.GetById(id);
+            if (user == null)
+                throw new UserNotFoundException();
             await _userRepository.Delete(user);
+        }
+
+        public Task<IEnumerable<Employee>> GetEmployee(int limit, int offset)
+        {
+            var employees = _userRepository.GetEmployee(limit, offset);
+            return employees;
+        }
+
+        public Task<IEnumerable<HRUser>> GetHR(int limit, int offset)
+        {
+            var hrUsers = _userRepository.GetHRUsers(limit, offset);
+             return hrUsers;
         }
     }
 }

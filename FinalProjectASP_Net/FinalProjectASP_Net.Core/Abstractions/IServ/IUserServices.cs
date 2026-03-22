@@ -12,6 +12,8 @@ namespace FinalProjectASP_Net.Core.Abstractions.IServ
     {
         Task<UserResponse> Login(LoginUserRequest request);
         Task<UserResponse> Register(RegisterUserRequest request);
+        Task<IEnumerable<Employee>> GetEmployee(int limit, int offset);
+        Task<IEnumerable<HRUser>> GetHR(int limit, int offset);
 
     }
 }

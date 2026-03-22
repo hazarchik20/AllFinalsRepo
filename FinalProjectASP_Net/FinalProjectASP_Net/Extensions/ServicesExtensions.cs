@@ -11,6 +11,8 @@ namespace FinalProjectASP_Net.Extensions
             // services.AddScoped<IMyService, MyService>();
             services.AddScoped<IUserServices, UserServices>();
             services.AddScoped<IVacancyServices, VacancyServices>();
+            services.AddScoped<IApplicationService, ApplicationService>();
+            services.AddScoped<ICompanyService, CompanyService>();
             services.AddScoped<JwtTokenGenerator>();
             return services;
 

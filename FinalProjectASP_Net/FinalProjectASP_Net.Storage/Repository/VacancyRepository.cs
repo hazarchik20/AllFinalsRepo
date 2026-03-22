@@ -30,20 +30,28 @@ namespace FinalProjectASP_Net.Storage.Repository
 
         public async Task<IEnumerable<Vacancy>> GetActiveVacancies(int limit, int offset)
         {
-            return await _dataContext.Vacancies.Where(v => v.IsActive).ToListAsync();
+            return await _dataContext.Vacancies
+                .Where(v => v.IsActive)
+                .Skip(offset)
+                .Take(limit)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Vacancy>> GetAll(int limit, int offset)
         {
            return await _dataContext.Vacancies
-                .Take(limit)
                 .Skip(offset)
+                .Take(limit)
                 .ToListAsync();
         }
 
         public async Task<IEnumerable<Vacancy>> GetByCompany(int companyId, int limit, int offset)
         {
-            return await _dataContext.Vacancies.Where(v => v.CompanyId == companyId).ToListAsync();
+            return await _dataContext.Vacancies
+                .Where(v => v.CompanyId == companyId)
+                .Skip(offset)
+                .Take(limit)
+                .ToListAsync();
         }
 
         public async Task<Vacancy?> GetById(int id)

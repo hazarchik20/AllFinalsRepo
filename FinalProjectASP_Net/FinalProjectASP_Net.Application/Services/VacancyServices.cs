@@ -114,12 +114,12 @@ namespace FinalProjectASP_Net.Application.Services
 
             await InvalidateCache(vacancy.Id, vacancy.CompanyId);
         }
-        public async Task Delete(Vacancy vacancy)
+        public async Task Delete(int id)
         {
+            var vacancy = await _repository.GetById(id);
             if (vacancy == null) return;
 
             await _repository.Delete(vacancy);
-
             await InvalidateCache(vacancy.Id, vacancy.CompanyId);
         }
 

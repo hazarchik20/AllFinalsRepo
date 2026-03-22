@@ -31,23 +31,14 @@ namespace FinalProjectASP_Net.Storage.Repository
         public Task<bool> IsEmailTaken(string email)
         {
             return _dataContext.UserBases.AnyAsync(u => u.Email == email);
-        }
-
-        public async Task<IEnumerable<Admin>> GetAdmins(int limit, int offset)
-        {
-            return await _dataContext.UserBases
-                .OfType<Admin>()
-                .Take(limit)
-                .Skip(offset)
-                .ToListAsync();
-        }
+        } 
 
         public async Task<IEnumerable<UserBase>> GetAll(int limit, int offset)
         {
             return await _dataContext.UserBases
+                .Skip(offset)
                 .Take(limit)
-                .Skip(offset).
-                ToListAsync();
+                .ToListAsync();
         }
 
         public async Task<UserBase?> GetByEmail(string email)
@@ -64,8 +55,8 @@ namespace FinalProjectASP_Net.Storage.Repository
         {
             return await _dataContext.UserBases
                 .OfType<Employee>()
-                .Take(limit)
                 .Skip(offset)
+                .Take(limit)
                 .ToListAsync();
         }
 
@@ -73,8 +64,8 @@ namespace FinalProjectASP_Net.Storage.Repository
         {
             return await _dataContext.UserBases
                 .OfType<HRUser>()
-                .Take(limit)
                 .Skip(offset)
+                .Take(limit)
                 .ToListAsync();
         }
 
