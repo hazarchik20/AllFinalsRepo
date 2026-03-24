@@ -158,7 +158,7 @@ namespace FinalProjectASP_Net.Storage.Migrations
                 {
                     b.HasBaseType("FinalProjectASP_Net.Core.Models.UserBase");
 
-                    b.HasDiscriminator().HasValue(2);
+                    b.HasDiscriminator().HasValue(0);
                 });
 
             modelBuilder.Entity("FinalProjectASP_Net.Core.Models.HRUser", b =>
@@ -168,9 +168,7 @@ namespace FinalProjectASP_Net.Storage.Migrations
                     b.Property<int>("CompanyId")
                         .HasColumnType("int");
 
-                    b.HasIndex("CompanyId")
-                        .IsUnique()
-                        .HasFilter("[CompanyId] IS NOT NULL");
+                    b.HasIndex("CompanyId");
 
                     b.HasDiscriminator().HasValue(1);
                 });
@@ -179,7 +177,7 @@ namespace FinalProjectASP_Net.Storage.Migrations
                 {
                     b.HasBaseType("FinalProjectASP_Net.Core.Models.UserBase");
 
-                    b.HasDiscriminator().HasValue(0);
+                    b.HasDiscriminator().HasValue(2);
                 });
 
             modelBuilder.Entity("FinalProjectASP_Net.Core.Models.Application", b =>
@@ -215,8 +213,8 @@ namespace FinalProjectASP_Net.Storage.Migrations
             modelBuilder.Entity("FinalProjectASP_Net.Core.Models.HRUser", b =>
                 {
                     b.HasOne("FinalProjectASP_Net.Core.Models.Company", "Company")
-                        .WithOne()
-                        .HasForeignKey("FinalProjectASP_Net.Core.Models.HRUser", "CompanyId")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 

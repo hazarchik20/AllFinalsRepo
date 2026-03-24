@@ -19,8 +19,8 @@ namespace FinalProjectASP_Net.Core.Models
     }
     public enum Role
     {
-        Admin,
+        Employee,
         HR,
-        Employee
+        Admin,
     }
 }

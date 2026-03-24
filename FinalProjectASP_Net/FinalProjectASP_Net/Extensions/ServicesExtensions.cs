@@ -1,5 +1,6 @@
 ﻿using FinalProjectASP_Net.Application.Services;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
+using FinalProjectASP_Net.Middleware;
 
 namespace FinalProjectASP_Net.Extensions
 {
@@ -13,6 +14,10 @@ namespace FinalProjectASP_Net.Extensions
             services.AddScoped<IVacancyServices, VacancyServices>();
             services.AddScoped<IApplicationService, ApplicationService>();
             services.AddScoped<ICompanyService, CompanyService>();
+
+            services.AddTransient<GlobalExceptionHandler>();
+            services.AddTransient<RequestLoggingMiddleware>();
+            
             services.AddScoped<JwtTokenGenerator>();
             return services;
 

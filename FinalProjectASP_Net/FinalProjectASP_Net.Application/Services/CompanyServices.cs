@@ -41,6 +41,8 @@ namespace FinalProjectASP_Net.Application.Services
         {
             if (company == null)
                 throw new ArgumentNullException(nameof(company));
+            if(company.Vacancies != null )
+                company.Vacancies = new List<Vacancy>();
 
             await _repository.Add(company);
 

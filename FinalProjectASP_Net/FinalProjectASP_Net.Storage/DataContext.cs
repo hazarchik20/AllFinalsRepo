@@ -47,11 +47,11 @@ namespace FinalProjectASP_Net.Storage
 
 
             // HR -> Company (1:1)
- 
+
             modelBuilder.Entity<HRUser>()
                 .HasOne(hr => hr.Company)
-                .WithOne()
-                .HasForeignKey<HRUser>(hr => hr.CompanyId)
+                .WithMany() 
+                .HasForeignKey(hr => hr.CompanyId)
                 .OnDelete(DeleteBehavior.Restrict);
 
 

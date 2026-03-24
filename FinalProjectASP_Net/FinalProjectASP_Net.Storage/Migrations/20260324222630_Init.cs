@@ -115,9 +115,7 @@ namespace FinalProjectASP_Net.Storage.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_UserBases_CompanyId",
                 table: "UserBases",
-                column: "CompanyId",
-                unique: true,
-                filter: "[CompanyId] IS NOT NULL");
+                column: "CompanyId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserBases_Email",
