@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Core.Abstractions.Base
 {
-    public interface IBaseServices<T> where T : class
+    public interface IBaseServices<MainModel,ResponseModel> where MainModel : class where ResponseModel : class
     {
-        Task<IEnumerable<T>> GetAll(int limit, int offset);
-        Task<T?> GetById(int id);
-        Task Add(T entity);
-        Task Update(T entity);
+        Task<IEnumerable<ResponseModel>> GetAll(int limit, int offset);
+        Task<ResponseModel?> GetById(int id);
+        Task Add(MainModel entity);
+        Task Update(MainModel entity);
         Task Delete(int id);
 
     }

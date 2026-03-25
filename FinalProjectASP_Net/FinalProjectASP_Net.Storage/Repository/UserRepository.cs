@@ -57,6 +57,7 @@ namespace FinalProjectASP_Net.Storage.Repository
                 .OfType<Employee>()
                 .Skip(offset)
                 .Take(limit)
+                .Include(e => e.Applications)
                 .ToListAsync();
         }
 
@@ -66,6 +67,7 @@ namespace FinalProjectASP_Net.Storage.Repository
                 .OfType<HRUser>()
                 .Skip(offset)
                 .Take(limit)
+                .Include(hr => hr.Company)
                 .ToListAsync();
         }
 

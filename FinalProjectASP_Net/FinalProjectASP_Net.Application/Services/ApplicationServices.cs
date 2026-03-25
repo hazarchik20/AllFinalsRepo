@@ -1,4 +1,5 @@
-﻿using FinalProjectASP_Net.Core.Abstractions.IRepo;
+﻿using FinalProjectASP_Net.Core.Abstractions.Base;
+using FinalProjectASP_Net.Core.Abstractions.IRepo;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
 using Microsoft.Extensions.Logging;
@@ -20,26 +21,7 @@ namespace FinalProjectASP_Net.Application.Services
             _repository = repository;
             _logger = logger;
         }
-
-        public async Task<IEnumerable<Core.Models.Application>> GetAll(int limit, int offset)
-        {
-            return await _repository.GetAll(limit, offset);
-        }
-
-        public async Task<Core.Models.Application> GetById(int id)
-        {
-            return await _repository.GetById(id);
-        }
-
-        public async Task<IEnumerable<Core.Models.Application>> GetByEmployee(int employeeId, int limit, int offset)
-        {
-            return await _repository.GetByEmployee(employeeId, limit, offset);
-        }
-
-        public async Task<IEnumerable<Core.Models.Application>> GetByVacancy(int vacancyId, int limit, int offset)
-        {
-            return await _repository.GetByVacancy(vacancyId, limit, offset);
-        }
+        
 
         public async Task Add(Core.Models.Application application)
         {
@@ -93,6 +75,41 @@ namespace FinalProjectASP_Net.Application.Services
             _logger.LogInformation("Application status updated. Id: {Id}, Status: {Status}", applicationId, status);
         }
 
-        
+        public async Task<IEnumerable<ApplicationReaponse>> GetByEmployee(int employeeId, int limit, int offset)
+        {
+            return MapToResponse(await _repository.GetByEmployee(employeeId, limit, offset));
+        }
+
+        public async Task<IEnumerable<ApplicationReaponse>> GetByVacancy(int vacancyId, int limit, int offset)
+        {
+            return MapToResponse(await _repository.GetByVacancy(vacancyId, limit, offset));
+        }
+
+        public async Task<IEnumerable<ApplicationReaponse>> GetAll(int limit, int offset)
+        {
+            
+            return MapToResponse(await _repository.GetAll(limit, offset));
+        }
+
+        public async Task<ApplicationReaponse> GetById(int id)
+        {
+            return MapToResponse(await _repository.GetById(id));
+        }
+        private ApplicationReaponse MapToResponse(Core.Models.Application application)=>
+            new() { 
+                CvPath = application.CvPath,
+                EmployeeId = application.EmployeeId,
+                VacancyId = application.VacancyId,
+                Status = application.Status.ToString()
+            };
+        private IEnumerable<ApplicationReaponse> MapToResponse(IEnumerable<Core.Models.Application> applications) =>
+            applications.Select(a => new ApplicationReaponse
+            {
+                CvPath = a.CvPath,
+                EmployeeId = a.EmployeeId,
+                VacancyId = a.VacancyId,
+                Status = a.Status.ToString()
+            });
+
     }
 }

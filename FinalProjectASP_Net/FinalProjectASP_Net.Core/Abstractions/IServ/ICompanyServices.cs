@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Core.Abstractions.IServ
 {
-    public interface ICompanyService : IBaseServices<Company>
+    public interface ICompanyService : IBaseServices<Company,Company>
     {
         Task<Company?> GetWithVacancies(int companyId);
     }

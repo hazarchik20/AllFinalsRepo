@@ -1,5 +1,6 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -18,28 +19,28 @@ namespace FinalProjectASP_Net.Controllers
         }
 
         [HttpGet("HR")]
-        public IActionResult GetHR([FromRoute] int limit = 10, [FromRoute] int offset = 0)
+        public async Task<IActionResult> GetHR([FromRoute] int limit = 10, [FromRoute] int offset = 0)
         {
-            var result = _usersService.GetHR(10, 0);
-            return Ok();
+            var result = await _usersService.GetHR(10, 0);
+            return Ok(result);
         }
         [HttpGet("Employee")]
-        public IActionResult GetEmployee([FromRoute] int limit = 10, [FromRoute] int offset = 0)
+        public async Task<IActionResult> GetEmployee([FromRoute] int limit = 10, [FromRoute] int offset = 0)
         {
-            var result = _usersService.GetEmployee(10, 0);
-            return Ok();
+            var result = await _usersService.GetEmployee(10, 0);
+            return Ok(result);
         }
         [HttpGet("{id}")]
-        public IActionResult GetAll([FromRoute] int id)
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
-            var result = _usersService.GetById(id);
-            return Ok();
+            var result = await _usersService.GetById(id);
+            return Ok(result);
         }
         [HttpGet]
-        public IActionResult GetAll([FromRoute] int limit=10, [FromRoute] int offset=0)
+        public async Task<IActionResult> GetAll([FromRoute] int limit=10, [FromRoute] int offset=0)
         {
-            var result = _usersService.GetAll(limit, offset);
-            return Ok();
+            var result = await _usersService.GetAll(limit, offset);
+            return Ok(result);
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
@@ -66,8 +67,5 @@ namespace FinalProjectASP_Net.Controllers
             var user = await _usersService.Login(request);
             return Ok(user);
         }
-
-
-
     }
 }

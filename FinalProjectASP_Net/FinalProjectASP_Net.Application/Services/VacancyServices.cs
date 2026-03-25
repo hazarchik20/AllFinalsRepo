@@ -1,4 +1,5 @@
-﻿using FinalProjectASP_Net.Core.Abstractions.IRepo;
+﻿using FinalProjectASP_Net.Core.Abstractions.Base;
+using FinalProjectASP_Net.Core.Abstractions.IRepo;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
 using Microsoft.Extensions.Caching.Distributed;
@@ -28,80 +29,7 @@ namespace FinalProjectASP_Net.Application.Services
             => $"vacancies_company_{companyId}_{limit}_{offset}";
         private string GetByIdKey(int id) => $"vacancy_{id}";
 
-        public async Task<IEnumerable<Vacancy>> GetAll(int limit, int offset)
-        {
-            var cacheKey = GetAllKey(limit, offset);
 
-            var cached = await _cache.GetStringAsync(cacheKey);
-
-            if (cached != null)
-            {
-                return JsonSerializer.Deserialize<IEnumerable<Vacancy>>(cached)!;
-            }
-
-            var data = await _repository.GetAll(limit, offset);
-
-            await SetCache(cacheKey, data);
-
-            return data;
-        }
-
-        public async Task<IEnumerable<Vacancy>> GetActive(int limit, int offset)
-        {
-            var cacheKey = GetActiveKey(limit, offset);
-
-            var cached = await _cache.GetStringAsync(cacheKey);
-
-            if (cached != null)
-            {
-                return JsonSerializer.Deserialize<IEnumerable<Vacancy>>(cached)!;
-            }
-
-            var data = await _repository.GetActiveVacancies(limit, offset);
-
-            await SetCache(cacheKey, data);
-
-            return data;
-        }
-
-        public async Task<IEnumerable<Vacancy>> GetByCompany(int companyId, int limit, int offset)
-        {
-            var cacheKey = GetByCompanyKey(companyId, limit, offset);
-
-            var cached = await _cache.GetStringAsync(cacheKey);
-
-            if (cached != null)
-            {
-                return JsonSerializer.Deserialize<IEnumerable<Vacancy>>(cached)!;
-            }
-
-            var data = await _repository.GetByCompany(companyId, limit, offset);
-
-            await SetCache(cacheKey, data);
-
-            return data;
-        }
-
-        public async Task<Vacancy?> GetById(int id)
-        {
-            var cacheKey = GetByIdKey(id);
-
-            var cached = await _cache.GetStringAsync(cacheKey);
-
-            if (cached != null)
-            {
-                return JsonSerializer.Deserialize<Vacancy>(cached);
-            }
-
-            var vacancy = await _repository.GetById(id);
-
-            if (vacancy != null)
-            {
-                await SetCache(cacheKey, vacancy);
-            }
-
-            return vacancy;
-        }
         public async Task Add(Vacancy vacancy)
         {
             await _repository.Add(vacancy);
@@ -137,7 +65,7 @@ namespace FinalProjectASP_Net.Application.Services
             );
         }
 
-        
+
         private async Task InvalidateCache(int vacancyId, int companyId)
         {
             await _cache.RemoveAsync(GetByIdKey(vacancyId));
@@ -146,6 +74,94 @@ namespace FinalProjectASP_Net.Application.Services
             await _cache.RemoveAsync("vacancies_active_0_0");
             await _cache.RemoveAsync($"vacancies_company_{companyId}_0_0");
         }
+
+        public async Task<IEnumerable<VacancyResponse>> GetAll(int limit, int offset)
+        {
+            var cacheKey = GetAllKey(limit, offset);
+            var cached = await _cache.GetStringAsync(cacheKey);
+            if (cached != null)
+            {
+                return JsonSerializer.Deserialize<IEnumerable<VacancyResponse>>(cached)!;
+            }
+
+            var data = await _repository.GetAll(limit, offset);
+            await SetCache(cacheKey, data);
+
+            var response = MapToResponse(data);
+            return response;
+        }
+
+        public async Task<VacancyResponse?> GetById(int id)
+        {
+            var cacheKey = GetByIdKey(id);
+            var cached = await _cache.GetStringAsync(cacheKey);
+            if (cached != null)
+            {
+                return JsonSerializer.Deserialize<VacancyResponse>(cached);
+            }
+
+            var vacancy = await _repository.GetById(id);
+            if (vacancy != null)
+            {
+                await SetCache(cacheKey, vacancy);
+            }
+            
+            var response = MapToResponse(vacancy);
+            return response;
+        }
+
+        public async Task<IEnumerable<VacancyResponse>> GetActive(int limit, int offset)
+        {
+            var cacheKey = GetActiveKey(limit, offset);
+            var cached = await _cache.GetStringAsync(cacheKey);
+
+            if (cached != null)
+            {
+                return JsonSerializer.Deserialize<IEnumerable<VacancyResponse>>(cached)!;
+            }
+
+            var data = await _repository.GetActiveVacancies(limit, offset);
+            await SetCache(cacheKey, data);
+
+            var response = MapToResponse(data);
+            return response;
+        }
+
+        public async Task<IEnumerable<VacancyResponse>> GetByCompany(int companyId, int limit, int offset)
+        {
+            var cacheKey = GetByCompanyKey(companyId, limit, offset);
+
+            var cached = await _cache.GetStringAsync(cacheKey);
+
+            if (cached != null)
+            {
+                return JsonSerializer.Deserialize<IEnumerable<VacancyResponse>>(cached)!;
+            }
+
+            var data = await _repository.GetByCompany(companyId, limit, offset);
+            await SetCache(cacheKey, data);
+
+            var response = MapToResponse(data);
+            return response;
+        }
+        private IEnumerable<VacancyResponse> MapToResponse(IEnumerable<Vacancy> vacancies) =>
+            vacancies.Select(v => new VacancyResponse
+            {
+                Salary = v.Salary,
+                Title = v.Title,
+                Description = v.Description,
+                CompanyId = v.CompanyId,
+                Applications = v.Applications
+            }).ToList();
+        private VacancyResponse MapToResponse(Vacancy vacancies) =>
+            new()
+            {
+                Salary = vacancies.Salary,
+                Title = vacancies.Title,
+                Description = vacancies.Description,
+                CompanyId = vacancies.CompanyId,
+                Applications = vacancies.Applications
+            };
 
     }
 }

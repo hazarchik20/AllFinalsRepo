@@ -6,11 +6,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using static FinalProjectASP_Net.Application.Services.JwtTokenGenerator;
 
 namespace FinalProjectASP_Net.Application.Services;
-
-
 
 public class JwtTokenGenerator
 {

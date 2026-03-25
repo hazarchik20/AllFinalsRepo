@@ -1,4 +1,5 @@
-﻿using FinalProjectASP_Net.Core.Abstractions.IRepo;
+﻿using FinalProjectASP_Net.Core.Abstractions.Base;
+using FinalProjectASP_Net.Core.Abstractions.IRepo;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Exceptions;
 using FinalProjectASP_Net.Core.Models;
@@ -65,23 +66,16 @@ namespace FinalProjectASP_Net.Application.Services
 
             return MapToResponse(user, token);
         }
-        private UserResponse MapToResponse(UserBase user, string? token = null) =>
-            new()
-            {
-                Email = user.Email,
-                Name = user.Name,
-                Token = token,
-                Role = user.Role.ToString() 
-            };
+       
 
-        public async Task<IEnumerable<UserBase>> GetAll(int limit, int offset)
+        public async Task<IEnumerable<UserResponse>> GetAll(int limit, int offset)
         {
-            return await _userRepository.GetAll(limit, offset);
+            return MapToUserResponse(await _userRepository.GetAll(limit, offset));
         }
 
-        public async Task<UserBase?> GetById(int id)
+        public async Task<UserResponse?> GetById(int id)
         {
-            return await _userRepository.GetById(id);
+            return MapToUserResponse(await _userRepository.GetById(id));
         }
 
         public async Task Add(UserBase entity)
@@ -100,6 +94,7 @@ namespace FinalProjectASP_Net.Application.Services
                 throw new Exception("User not found");
 
             await _userRepository.Update(entity);
+
         }
 
         public async Task Delete(int id)
@@ -110,16 +105,59 @@ namespace FinalProjectASP_Net.Application.Services
             await _userRepository.Delete(user);
         }
 
-        public Task<IEnumerable<Employee>> GetEmployee(int limit, int offset)
+        public async Task<IEnumerable<UserResponse>> GetEmployee(int limit, int offset)
         {
-            var employees = _userRepository.GetEmployee(limit, offset);
-            return employees;
+            var employees = await _userRepository.GetEmployee(limit, offset);
+            var response = MapToUserResponse( employees);
+            return response;
         }
 
-        public Task<IEnumerable<HRUser>> GetHR(int limit, int offset)
+        public async Task<IEnumerable<UserResponse>> GetHR(int limit, int offset)
         {
-            var hrUsers = _userRepository.GetHRUsers(limit, offset);
-             return hrUsers;
+            var hrUsers = await _userRepository.GetHRUsers(limit, offset);
+            var response = MapToUserResponse(hrUsers);
+            return response;
         }
+
+        private IEnumerable<UserResponse> MapToUserResponse(IEnumerable<HRUser> hrUsers)=>
+             hrUsers.Select(u => new UserResponse
+             {
+                 Email = u.Email,
+                 Name = u.Name,
+                 Role = u.Role.ToString()
+             });
+        private IEnumerable<UserResponse> MapToUserResponse(IEnumerable<Employee> emplUser)=>
+            emplUser.Select(u => new UserResponse
+            {
+                Email = u.Email,
+                Name = u.Name,
+                Role = u.Role.ToString()
+            });
+
+        private IEnumerable<UserResponse> MapToUserResponse(IEnumerable<UserBase> baseUser)=>
+            baseUser.Select(u => new UserResponse
+            {
+                Email = u.Email,
+                Name = u.Name,
+                Role = u.Role.ToString()
+            });
+
+        private UserResponse MapToResponse(UserBase user, string? token = null) =>
+           new()
+           {
+               Email = user.Email,
+               Name = user.Name,
+               Token = token,
+               Role = user.Role.ToString()
+           };
+        private UserResponse MapToUserResponse(UserBase user)=>
+            new()
+            {
+                Email = user.Email,
+                Name = user.Name,
+                Role = user.Role.ToString()
+            };
+
+        
     }
 }

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Core.Abstractions.IServ
 {
-    public interface IApplicationService : IBaseServices<Application>
+    public interface IApplicationService : IBaseServices<Application,ApplicationReaponse>
     {
-        Task<IEnumerable<Application>> GetByEmployee(int employeeId, int limit, int offset);
-        Task<IEnumerable<Application>> GetByVacancy(int vacancyId, int limit, int offset);
+        Task<IEnumerable<ApplicationReaponse>> GetByEmployee(int employeeId, int limit, int offset);
+        Task<IEnumerable<ApplicationReaponse>> GetByVacancy(int vacancyId, int limit, int offset);
         Task UpdateStatus(int applicationId, string status);
     }
 }

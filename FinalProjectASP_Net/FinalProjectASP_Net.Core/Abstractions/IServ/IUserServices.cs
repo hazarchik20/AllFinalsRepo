@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Core.Abstractions.IServ
 {
-    public interface IUserServices : IBaseServices<UserBase>
+    public interface IUserServices : IBaseServices<UserBase,UserResponse>
     {
         Task<UserResponse> Login(LoginUserRequest request);
         Task<UserResponse> Register(RegisterUserRequest request);
-        Task<IEnumerable<Employee>> GetEmployee(int limit, int offset);
-        Task<IEnumerable<HRUser>> GetHR(int limit, int offset);
+        Task<IEnumerable<UserResponse>> GetEmployee(int limit, int offset);
+        Task<IEnumerable<UserResponse>> GetHR(int limit, int offset);
+
 
     }
 }
