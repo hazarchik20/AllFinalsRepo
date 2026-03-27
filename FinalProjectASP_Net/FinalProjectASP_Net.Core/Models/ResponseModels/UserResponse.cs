@@ -1,4 +1,4 @@
-namespace FinalProjectASP_Net.Core.Models;
+namespace FinalProjectASP_Net.Core.Models.ResponseModels;
 public class UserResponse
 {
     public string Name { get; set; }

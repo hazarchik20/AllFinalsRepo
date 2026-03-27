@@ -1,4 +1,4 @@
-namespace FinalProjectASP_Net.Core.Models;
+namespace FinalProjectASP_Net.Core.Models.RequestModels;
 
 public class LoginUserRequest
 {

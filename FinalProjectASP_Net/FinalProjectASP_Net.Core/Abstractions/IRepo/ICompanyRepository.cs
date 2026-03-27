@@ -10,6 +10,7 @@ namespace FinalProjectASP_Net.Core.Abstractions.IRepo
 {
     public interface ICompanyRepository : IBaseRepository<Company>
     {
-        Task<Company?> GetCompanyWithVacancies(int companyId);
+        Task<Company?> GetCompanyVacancies(int companyId);
+        Task<Company?> GetByName(string name);
     }
 }

@@ -71,9 +71,20 @@ namespace FinalProjectASP_Net.Storage.Repository
                 .ToListAsync();
         }
 
-        public async Task Update(UserBase entity)
+        public async Task Update(int id,UserBase entity)
         {
-            _dataContext.UserBases.Update(entity);
+            var existingUser = await _dataContext.UserBases.FindAsync(id);
+            if (existingUser == null)
+            {
+                throw new KeyNotFoundException($"User with id {id} not found.");
+            }
+
+             existingUser.Name = entity.Name;
+             existingUser.Email = entity.Email;
+             existingUser.PasswordHash = entity.PasswordHash;
+             existingUser.Role = entity.Role;
+
+            _dataContext.UserBases.Update(existingUser);
             await _dataContext.SaveChangesAsync();
         }
     }

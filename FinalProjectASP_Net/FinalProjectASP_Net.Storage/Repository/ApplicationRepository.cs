@@ -75,9 +75,17 @@ namespace FinalProjectASP_Net.Storage.Repository
             }
         }
 
-        public async Task Update(Application entity)
+        public async Task Update(int id,Application entity)
         {
-            _dataContext.Applications.Update(entity);
+            var existing = await _dataContext.Applications.FindAsync(id);
+            if (existing == null)
+                throw new Exception("Application not found");
+
+            existing.EmployeeId = entity.EmployeeId;
+            existing.VacancyId = entity.VacancyId;
+            existing.CvPath = entity.CvPath;
+
+            _dataContext.Applications.Update(existing);
             await _dataContext.SaveChangesAsync();
         }
     }

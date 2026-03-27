@@ -59,9 +59,20 @@ namespace FinalProjectASP_Net.Storage.Repository
            return await _dataContext.Vacancies.FindAsync(id);
         }
 
-        public async Task Update(Vacancy entity)
+        public async Task Update(int id, Vacancy entity)
         {
-            _dataContext.Vacancies.Update(entity);
+            
+           var existing =  await _dataContext.Vacancies.FindAsync(id);
+
+            if (existing == null)
+                throw new Exception("Vacancy not found");
+
+            existing.Title = entity.Title;
+            existing.Description = entity.Description;
+            existing.Salary = entity.Salary;
+            existing.CompanyId = entity.CompanyId;
+
+            _dataContext.Vacancies.Update(existing);
             await _dataContext.SaveChangesAsync();
         }
     }

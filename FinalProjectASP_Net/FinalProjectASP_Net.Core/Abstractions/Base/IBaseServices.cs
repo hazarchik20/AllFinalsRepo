@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace FinalProjectASP_Net.Core.Abstractions.Base
 {
-    public interface IBaseServices<MainModel,ResponseModel> where MainModel : class where ResponseModel : class
+    public interface IBaseServices<MainModel,ResponseModel, ShortRequsetModel> where MainModel : class where ResponseModel : class where ShortRequsetModel : class
     {
         Task<IEnumerable<ResponseModel>> GetAll(int limit, int offset);
         Task<ResponseModel?> GetById(int id);
-        Task Add(MainModel entity);
-        Task Update(MainModel entity);
+        Task Add(ShortRequsetModel entity);
+        Task Update(int id, ShortRequsetModel entity);
         Task Delete(int id);
 
     }

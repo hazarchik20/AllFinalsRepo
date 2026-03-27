@@ -1,6 +1,7 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IRepo;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.RequestModels;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,7 @@ namespace FinalProjectASP_Net.Application.Services
         private readonly ICompanyRepository _repository;
         private readonly ILogger<CompanyService> _logger;
 
-        public CompanyService(ICompanyRepository repository,
-                              ILogger<CompanyService> logger)
+        public CompanyService(ICompanyRepository repository, ILogger<CompanyService> logger)
         {
             _repository = repository;
             _logger = logger;
@@ -32,36 +32,38 @@ namespace FinalProjectASP_Net.Application.Services
             return await _repository.GetById(id);
         }
 
-        public async Task<Company?> GetWithVacancies(int companyId)
+        public async Task<Company?> GetVacancies(int companyId)
         {
-            return await _repository.GetCompanyWithVacancies(companyId);
+            return await _repository.GetCompanyVacancies(companyId);
         }
 
-        public async Task Add(Company company)
-        {
-            if (company == null)
-                throw new ArgumentNullException(nameof(company));
-            if(company.Vacancies != null )
-                company.Vacancies = new List<Vacancy>();
-
-            await _repository.Add(company);
-
-            _logger.LogInformation("Company created. Id: {Id}", company.Id);
-        }
-
-        public async Task Update(Company company)
+        public async Task Add(ShortCompanyRequest company)
         {
             if (company == null)
                 throw new ArgumentNullException(nameof(company));
 
-            var existing = await _repository.GetById(company.Id);
+            var companyEntity = MapToMain(company);
 
+            await _repository.Add(companyEntity);
+
+            _logger.LogInformation("Company created. Id: {Id}", companyEntity.Id);
+        }
+
+        public async Task Update(int id, ShortCompanyRequest company)
+        {
+            if (company == null)
+                throw new ArgumentNullException(nameof(company));
+
+            var existing = await _repository.GetById(id);
             if (existing == null)
                 throw new Exception("Company not found");
 
-            await _repository.Update(company);
+            var companyToUpdate = MapToMain(company);
+            
 
-            _logger.LogInformation("Company updated. Id: {Id}", company.Id);
+            await _repository.Update(id, companyToUpdate);
+
+            _logger.LogInformation("Company updated. Id: {Id}", id);
         }
 
         public async Task Delete(int id)
@@ -74,6 +76,17 @@ namespace FinalProjectASP_Net.Application.Services
             await _repository.Delete(company);
 
             _logger.LogInformation("Company deleted. Id: {Id}", id);
+        }
+        private Company MapToMain(ShortCompanyRequest request)
+        {
+            return new Company
+            {
+                Name = request.Name,
+                Location = request.Location,
+                Industry = request.Industry,
+                Vacancies = new List<Vacancy>()
+
+            };
         }
     }
 }

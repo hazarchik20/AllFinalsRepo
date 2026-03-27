@@ -11,7 +11,7 @@ namespace FinalProjectASP_Net.Core.Abstractions.Base
         Task<IEnumerable<T>> GetAll(int limit, int offset);
         Task<T?> GetById(int id);
         Task Add(T entity);
-        Task Update(T entity);
+        Task Update(int id,T entity); 
         Task Delete(T entity);
 
         

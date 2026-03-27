@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinalProjectASP_Net.Core.Models
+namespace FinalProjectASP_Net.Core.Models.ResponseModels
 {
     public class ErrorResponse
     {

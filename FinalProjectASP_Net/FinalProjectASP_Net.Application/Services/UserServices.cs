@@ -3,6 +3,8 @@ using FinalProjectASP_Net.Core.Abstractions.IRepo;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Exceptions;
 using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.RequestModels;
+using FinalProjectASP_Net.Core.Models.ResponseModels;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -37,7 +39,7 @@ namespace FinalProjectASP_Net.Application.Services
                 Name = request.Username,
                 Email = request.Email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
-                Role = Role.Employee
+                Role = Role.HR
             };
 
 
@@ -75,25 +77,26 @@ namespace FinalProjectASP_Net.Application.Services
 
         public async Task<UserResponse?> GetById(int id)
         {
-            return MapToUserResponse(await _userRepository.GetById(id));
+            return MapToUserResponse(await _userRepository.GetById(id)) ?? throw new InvalidCredentialsException();
         }
-
-        public async Task Add(UserBase entity)
+        public Task Add(UserBase entity)
         {
             throw new NotImplementedException("Use Register method to create a new user");
         }
 
-        public async Task Update(UserBase entity)
+        public async Task Update(int id,UserBase entity)
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
 
             var existingUser = await _userRepository.GetById(entity.Id);
 
+            existingUser.PasswordHash = BCrypt.Net.BCrypt.HashPassword(entity.PasswordHash);
+
             if (existingUser == null)
                 throw new Exception("User not found");
 
-            await _userRepository.Update(entity);
+            await _userRepository.Update(id, entity);
 
         }
 
@@ -158,6 +161,6 @@ namespace FinalProjectASP_Net.Application.Services
                 Role = user.Role.ToString()
             };
 
-        
+
     }
 }

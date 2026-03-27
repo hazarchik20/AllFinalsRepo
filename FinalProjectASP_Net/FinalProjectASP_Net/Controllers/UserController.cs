@@ -1,5 +1,7 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.RequestModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -42,6 +44,7 @@ namespace FinalProjectASP_Net.Controllers
             var result = await _usersService.GetAll(limit, offset);
             return Ok(result);
         }
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
@@ -49,9 +52,9 @@ namespace FinalProjectASP_Net.Controllers
             return Ok();
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserBase request)
+        public async Task<IActionResult> UpdateUser(int id,[FromBody] UserBase request)
         {
-            await _usersService.Update( request);
+            await _usersService.Update(id,request);
             return Ok(request);
         }
         [HttpPost("register")]

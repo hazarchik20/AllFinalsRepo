@@ -1,5 +1,5 @@
 ﻿using FinalProjectASP_Net.Core.Exceptions;
-using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.ResponseModels;
 using System.Text.Json;
 
 namespace FinalProjectASP_Net.Middleware

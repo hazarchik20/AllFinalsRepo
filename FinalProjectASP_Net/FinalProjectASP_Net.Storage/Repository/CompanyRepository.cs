@@ -42,14 +42,28 @@ namespace FinalProjectASP_Net.Storage.Repository
             return await _dataContext.Companies.FindAsync(id);
         }
 
-        public async Task<Company?> GetCompanyWithVacancies(int companyId)
+        public async Task<Company?> GetByName(string name)
+        {
+            return await _dataContext.Companies.FirstOrDefaultAsync(c => c.Name == name);
+        }
+
+        public async Task<Company?> GetCompanyVacancies(int companyId)
         {
             return await _dataContext.Companies.Include(c => c.Vacancies).FirstOrDefaultAsync(c => c.Id == companyId);
         }
 
-        public async Task Update(Company entity)
+        public async Task Update(int id,Company entity)
         {
-            _dataContext.Companies.Update(entity);
+            var existingCompany = await _dataContext.Companies.FindAsync(id);
+            if (existingCompany == null)
+            {
+                throw new KeyNotFoundException($"Company with id {id} not found.");
+            }
+            existingCompany.Name = entity.Name;
+            existingCompany.Location = entity.Location;
+            existingCompany.Industry = entity.Industry;
+
+            _dataContext.Companies.Update(existingCompany);
             await _dataContext.SaveChangesAsync();
         }
     }

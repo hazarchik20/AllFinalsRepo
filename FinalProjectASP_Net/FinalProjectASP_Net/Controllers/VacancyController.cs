@@ -1,6 +1,8 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.RequestModels;
 using FinalProjectASP_Net.Core.Models.Users;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -24,6 +26,7 @@ namespace FinalProjectASP_Net.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles = "Admin, HR")]
         [HttpGet("active")]
         public async Task<IActionResult> GetActive([FromQuery] int limit = 10, [FromQuery] int offset = 0)
         {
@@ -45,20 +48,23 @@ namespace FinalProjectASP_Net.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles = "Admin, HR")]
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Vacancy vacancy)
+        public async Task<IActionResult> Create([FromBody] ShortVacancyRequest vacancy)
         {
             await _service.Add(vacancy);
             return Ok();
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update([FromBody] Vacancy vacancy)
+        [Authorize(Roles = "Admin, HR")]
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id,[FromBody] ShortVacancyRequest vacancy)
         {
-            await _service.Update(vacancy);
+            await _service.Update(id, vacancy);
             return Ok();
         }
 
+        [Authorize(Roles = "Admin, HR")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

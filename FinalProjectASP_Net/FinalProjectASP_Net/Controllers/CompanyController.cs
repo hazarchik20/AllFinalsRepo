@@ -1,5 +1,7 @@
 ﻿using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.RequestModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProjectASP_Net.Controllers
@@ -33,10 +35,10 @@ namespace FinalProjectASP_Net.Controllers
             return Ok(company);
         }
 
-        [HttpGet("{id}/with-vacancies")]
-        public async Task<IActionResult> GetWithVacancies(int id)
+        [HttpGet("{id}/vacancies")]
+        public async Task<IActionResult> GetVacancies(int id)
         {
-            var company = await _service.GetWithVacancies(id);
+            var company = await _service.GetVacancies(id);
 
             if (company == null)
                 return NotFound();
@@ -44,20 +46,23 @@ namespace FinalProjectASP_Net.Controllers
             return Ok(company);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Company company)
+        public async Task<IActionResult> Create([FromBody] ShortCompanyRequest company)
         {
             await _service.Add(company);
             return Ok();
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update([FromBody] Company company)
+        [Authorize(Roles = "HR")]
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id,[FromBody] ShortCompanyRequest company)
         {
-            await _service.Update(company);
+            await _service.Update(id,company);
             return Ok();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

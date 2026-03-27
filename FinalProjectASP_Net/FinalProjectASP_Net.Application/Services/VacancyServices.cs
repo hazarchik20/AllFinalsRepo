@@ -2,6 +2,8 @@
 using FinalProjectASP_Net.Core.Abstractions.IRepo;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
+using FinalProjectASP_Net.Core.Models.RequestModels;
+using FinalProjectASP_Net.Core.Models.ResponseModels;
 using Microsoft.Extensions.Caching.Distributed;
 using System;
 using System.Collections.Generic;
@@ -30,17 +32,23 @@ namespace FinalProjectASP_Net.Application.Services
         private string GetByIdKey(int id) => $"vacancy_{id}";
 
 
-        public async Task Add(Vacancy vacancy)
+        public async Task Add(ShortVacancyRequest vacancy)
         {
-            await _repository.Add(vacancy);
+            var vacancyEntity = MapToMain(vacancy);
+            await _repository.Add(vacancyEntity);
 
-            await InvalidateCache(vacancy.Id, vacancy.CompanyId);
+            await InvalidateCache(vacancyEntity.Id, vacancyEntity.CompanyId);
         }
-        public async Task Update(Vacancy vacancy)
+        public async Task Update(int id, ShortVacancyRequest vacancy)
         {
-            await _repository.Update(vacancy);
+            var existing = await _repository.GetById(id);
+            if (existing == null)
+                throw new Exception("Vacancy not found");
+            var vacancyEntity = MapToMain(vacancy);
 
-            await InvalidateCache(vacancy.Id, vacancy.CompanyId);
+            await _repository.Update(id,vacancyEntity);
+
+            await InvalidateCache(id, vacancyEntity.CompanyId);
         }
         public async Task Delete(int id)
         {
@@ -161,6 +169,18 @@ namespace FinalProjectASP_Net.Application.Services
                 Description = vacancies.Description,
                 CompanyId = vacancies.CompanyId,
                 Applications = vacancies.Applications
+            };
+        private Vacancy MapToMain(ShortVacancyRequest request) =>
+            new()
+            {
+                PostedDate = DateTime.UtcNow,
+                IsActive = true,
+                Salary = request.Salary,
+                Title = request.Title,
+                Description = request.Description,
+                CompanyId = request.CompanyId,
+                Applications = new List<Core.Models.Application>()
+
             };
 
     }
