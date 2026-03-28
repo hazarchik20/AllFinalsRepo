@@ -31,6 +31,27 @@ namespace FinalProjectASP_Net.Application.Services
             => $"vacancies_company_{companyId}_{limit}_{offset}";
         private string GetByIdKey(int id) => $"vacancy_{id}";
 
+        private async Task SetCache<T>(string key, T data)
+        {
+            var options = new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+            };
+
+            await _cache.SetStringAsync(
+                key,
+                JsonSerializer.Serialize(data),
+                options
+            );
+        }
+
+        private async Task InvalidateCache(int vacancyId, int companyId)
+        {
+            await _cache.RemoveAsync(GetByIdKey(vacancyId));
+            await _cache.RemoveAsync("vacancies_all_0_0");
+            await _cache.RemoveAsync("vacancies_active_0_0");
+            await _cache.RemoveAsync($"vacancies_company_{companyId}_0_0");
+        }
 
         public async Task Add(ShortVacancyRequest vacancy)
         {
@@ -57,30 +78,6 @@ namespace FinalProjectASP_Net.Application.Services
 
             await _repository.Delete(vacancy);
             await InvalidateCache(vacancy.Id, vacancy.CompanyId);
-        }
-
-        private async Task SetCache<T>(string key, T data)
-        {
-            var options = new DistributedCacheEntryOptions
-            {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
-            };
-
-            await _cache.SetStringAsync(
-                key,
-                JsonSerializer.Serialize(data),
-                options
-            );
-        }
-
-
-        private async Task InvalidateCache(int vacancyId, int companyId)
-        {
-            await _cache.RemoveAsync(GetByIdKey(vacancyId));
-
-            await _cache.RemoveAsync("vacancies_all_0_0");
-            await _cache.RemoveAsync("vacancies_active_0_0");
-            await _cache.RemoveAsync($"vacancies_company_{companyId}_0_0");
         }
 
         public async Task<IEnumerable<VacancyResponse>> GetAll(int limit, int offset)

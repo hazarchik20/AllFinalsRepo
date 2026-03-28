@@ -39,7 +39,7 @@ namespace FinalProjectASP_Net.Application.Services
                 Name = request.Username,
                 Email = request.Email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
-                Role = Role.HR
+                Role = Role.Employee
             };
 
 

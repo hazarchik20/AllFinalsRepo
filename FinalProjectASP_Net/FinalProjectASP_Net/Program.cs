@@ -74,8 +74,8 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 
-app.UseAuthentication(); // хто ти
-app.UseAuthorization();  // що ти можеш
+app.UseAuthentication(); 
+app.UseAuthorization();
 
 
 app.UseCustomMiddleware();

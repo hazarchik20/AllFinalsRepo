@@ -55,7 +55,7 @@ namespace FinalProjectASP_Net.Storage
                 .OnDelete(DeleteBehavior.Restrict);
 
 
-            // Company -> Vacancies (1:N)
+            // Company -> Vacancies (1:M)
 
             modelBuilder.Entity<Company>()
                 .HasMany(c => c.Vacancies)
@@ -64,7 +64,7 @@ namespace FinalProjectASP_Net.Storage
                 .OnDelete(DeleteBehavior.Cascade);
 
 
-            // Vacancy -> Applications (1:N)
+            // Vacancy -> Applications (1:M)
 
             modelBuilder.Entity<Vacancy>()
                 .HasMany(v => v.Applications)
@@ -73,7 +73,7 @@ namespace FinalProjectASP_Net.Storage
                 .OnDelete(DeleteBehavior.Cascade);
 
 
-            // Employee -> Applications (1:N)
+            // Employee -> Applications (1:M)
 
             modelBuilder.Entity<Employee>()
                 .HasMany(e => e.Applications)
