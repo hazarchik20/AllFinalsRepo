@@ -1,6 +1,8 @@
 using FinalProjectASP_Net.Core.Models;
 using FinalProjectASP_Net.Extensions;
+using FinalProjectASP_Net.Storage;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -68,6 +70,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+
 var app = builder.Build();
 
 
@@ -85,3 +88,9 @@ app.UseSwaggerUI();
 
 app.MapControllers();
 app.Run();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<DataContext>();
+    db.Database.Migrate();
+}
