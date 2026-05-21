@@ -18,6 +18,9 @@ builder.Services
     .AddServices(builder.Configuration)
     .AddRedisCache(builder.Configuration);
 
+builder.Services.AddAWSService<IAmazonS3>();
+builder.Services.AddScoped<S3Services>();
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -82,8 +85,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication(); 
 app.UseAuthorization();
 
-builder.Services.AddAWSService<IAmazonS3>();
-builder.Services.AddScoped<S3Services>();
+
 
 app.UseCustomMiddleware();
 
