@@ -1,4 +1,5 @@
-﻿using FinalProjectASP_Net.Application.Services;
+﻿using Amazon.S3;
+using FinalProjectASP_Net.Application.Services;
 using FinalProjectASP_Net.Core.Abstractions.IServ;
 using FinalProjectASP_Net.Core.Models;
 using FinalProjectASP_Net.Middleware;

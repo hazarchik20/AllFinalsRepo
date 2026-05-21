@@ -1,3 +1,5 @@
+using Amazon.S3;
+using FinalProjectASP_Net.Application.Services;
 using FinalProjectASP_Net.Core.Models;
 using FinalProjectASP_Net.Extensions;
 using FinalProjectASP_Net.Storage;
@@ -80,6 +82,8 @@ app.UseHttpsRedirection();
 app.UseAuthentication(); 
 app.UseAuthorization();
 
+builder.Services.AddAWSService<IAmazonS3>();
+builder.Services.AddScoped<S3Services>();
 
 app.UseCustomMiddleware();
 
