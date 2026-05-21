@@ -3,26 +3,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProjectASP_Net.Controllers
 {
-    namespace FinalProjectASP_Net.Controllers
+    [ApiController]
+    [Route("api/AWSControllers")]
+    public class AWSControllers : ControllerBase
     {
-        [ApiController]
-        [Route("api/AWSControllers")]
-        public class AWSControllers : ControllerBase
+        private readonly S3Services _s3Service;
+
+        public AWSControllers(S3Services s3Service)
         {
-            private readonly S3Services _s3Service;
+            _s3Service = s3Service;
+        }
 
-            public AWSControllers(S3Services s3Service)
-            {
-                _s3Service = s3Service;
-            }
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            await _s3Service.UploadFileAsync(file);
 
-            [HttpPost("upload")]
-            public async Task<IActionResult> Upload(IFormFile file)
-            {
-                await _s3Service.UploadFileAsync(file);
-
-                return Ok("File uploaded to S3");
-            }
+            return Ok("File uploaded to S3");
         }
     }
 }
