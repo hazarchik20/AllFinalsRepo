@@ -6,7 +6,7 @@ namespace FinalProjectASP_Net.Controllers
     namespace FinalProjectASP_Net.Controllers
     {
         [ApiController]
-        [Route("api/[controller]")]
+        [Route("api/AWSControllers")]
         public class AWSControllers : ControllerBase
         {
             private readonly S3Services _s3Service;
