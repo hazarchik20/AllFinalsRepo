@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ vault.name }}</h2>
+<p>{{ vault.description }}</p>
+
+{% if manager %}
+<a href="{% url 'set_limit' vault.id %}" class="btn btn-warning mb-3">
+    Set Monthly Limit
+</a>
+{% endif %}
+
+<hr>
+
+<h4>Members</h4>
+
+{% if manager %}
+<a href="{% url 'add_member' vault.id %}" class="btn btn-primary mb-3">
+    + Add Member
+</a>
+{% endif %}
+
+
+
+<ul>
+    {% for member in members %}
+    <li>
+        {{ member.user.username }}
+        ({{ member.role }})
+    </li>
+    {% endfor %}
+
+</ul>
+<hr>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h5>Monthly Statistics</h5>
+        <p>
+            Balance:
+            <strong>{{ balance }} ₴</strong>
+
+        </p>
+        <p>
+            Spent:
+            <strong>{{ total }} ₴</strong>
+        </p>
+
+        <p>
+            Income:
+            <strong> {{ income }} ₴</strong>
+
+        </p>
+        <p>
+            Limit:
+            <strong>
+                {% if limit %}
+                {{ limit.monthly_limit }} ₴
+                {% else %}
+                Not set
+                {% endif %}
+            </strong>
+        </p>
+    </div>
+</div>
+<hr>
+
+<h4>Transactions</h4>
+<a href="{% url 'add_vault_transaction' vault.id %}" class="btn btn-success mb-3">
+    + Add Transaction
+</a>
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Amount</th>
+    </tr>
+    {% for expense in expenses %}
+    <tr>
+        <td>{{ expense.title }}</td>
+        <td>
+            {% if expense.transaction_type == 'income' %}
+            <span class="badge bg-success">
+                Income
+            </span>
+            {% else %}
+            <span class="badge bg-danger">
+                Expense
+            </span>
+            {% endif %}
+        </td>
+        <td>{{ expense.amount }} ₴</td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="2">
+            No transactions
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

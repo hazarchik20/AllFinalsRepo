@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Add Transaction</h2>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {% for field in form %}
+
+    <div class="mb-3">
+
+        <label class="form-label">
+            {{ field.label }}
+        </label>
+
+        {{ field }}
+
+        {{ field.errors }}
+
+    </div>
+
+    {% endfor %}
+
+    <button class="btn btn-success">
+        Save
+    </button>
+
+</form>
+
+{% endblock %}

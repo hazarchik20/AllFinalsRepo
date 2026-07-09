@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+        <h2>Dashboard</h2>
+        <small class="text-muted">
+            Welcome, {{ user.username }}
+        </small>
+    </div>
+
+    <a href="{% url 'add_transaction' %}" class="btn btn-success">
+        + Transaction
+    </a>
+
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card shadow-lg rounded-4">
+            <div class="card-body">
+                <h6>Balance</h6>
+                <h2>{{ balance }} ₴</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-lg rounded-4">
+            <div class="card-body">
+                <h6>Income</h6>
+                <h2 class="text-success">
+                    {{ income }} ₴
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-lg rounded-4">
+            <div class="card-body">
+                <h6>Expenses</h6>
+                <h2 class="text-danger">
+                    {{ expense }} ₴
+                </h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Categories
+            </div>
+            <ul class="list-group list-group-flush">
+                {% for category in categories %}
+                <li class="list-group-item">
+                    {{ category.name }}
+                </li>
+                {% empty %}
+                <li class="list-group-item">
+                    No categories
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Recent Transactions
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for expense in expenses %}
+                    <tr>
+                        <td>{{ expense.title }}</td>
+                        <td>{{ expense.category }}</td>
+                        <td>
+                            {% if expense.transaction_type == 'income' %}
+                            <span class="badge bg-success">
+                                Income
+                            </span>
+                            {% else %}
+                            <span class="badge bg-danger">
+                                Expense
+                            </span>
+                            {% endif %}
+                        </td>
+
+                        <td>{{ expense.amount }} ₴</td>
+                        <td>
+                            <a href="{% url 'edit_transaction' expense.id %}" class="btn btn-warning btn-sm">
+                                Edit
+                            </a>
+                            <a href="{% url 'delete_transaction' expense.id %}" class="btn btn-danger btn-sm">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5">
+                            No transactions
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Monthly Limit</h2>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    <input type="number" step="0.01" name="limit" class="form-control" value="{{ limit.monthly_limit }}">
+
+    <br>
+
+    <button class="btn btn-success">
+        Save
+    </button>
+
+</form>
+
+{% endblock %}

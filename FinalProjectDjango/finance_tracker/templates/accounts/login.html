@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% load socialaccount %}
+
+{% block content %}
+
+<h2>Login</h2>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {% for field in form %}
+
+    <div class="mb-3">
+
+        <label class="form-label">
+            {{ field.label }}
+        </label>
+
+        {{ field }}
+
+        {{ field.errors }}
+
+    </div>
+
+    {% endfor %}
+
+    <a href="{% provider_login_url 'google' %}" class="btn btn-danger w-100 mb-3">
+        Login with Google
+    </a>
+
+    <button class="btn btn-primary">
+        Login
+    </button>
+
+</form>
+
+<p class="mt-3">
+    No account?
+    <a href="{% url 'register' %}">
+        Register
+    </a>
+</p>
+
+{% endblock %}
